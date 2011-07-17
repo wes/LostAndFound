@@ -45,13 +45,13 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
+    self.tabBarController.navigationItem.rightBarButtonItem = nil;
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self getTableCells];
     [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
     self.tabBarController.navigationItem.title = @"Report";
-    
 
 //    UITableView *mapTableCellView = [self.tableCells objectAtIndex:2];
 //    [mapTableCellView  
@@ -146,7 +146,7 @@
 
 - (void)setEditingButtons {
 
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save)];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(saveRecord)];
     
     self.tabBarController.navigationItem.rightBarButtonItem = rightBarButtonItem;
 
@@ -180,17 +180,23 @@
 -(BOOL)saveRecord
 {
 
-    UITableView *titleView = [self.tableCells objectAtIndex:0];
-    UITableView *mapView = [self.tableCells objectAtIndex:1];
-    UITableView *subTitleView = [self.tableCells objectAtIndex:3];
+    UITableViewCell *titleView = [self.tableCells objectAtIndex: 0];
+//    UITableViewCell *mapView = [self.tableCells objectAtIndex: 2];
+    UITableViewCell *subTitleView = [self.tableCells objectAtIndex: 3];
     
     //found
     report.title = [titleView getText];
-    report.subtitle = [mapView getText];
+    report.subtitle = [subTitleView getText];
     report.lat = [[self.tableCells objectAtIndex:2] centerLat];
     report.lng = [[self.tableCells objectAtIndex:2] centerLng];
 //    report.categoryid = 0;
+    
+    NSLog(@"REPORT");
+    
+    NSLog(@"%@",report);
+    
     RecordsManager *rm = [[RecordsManager alloc] init];
+    
     BOOL success = [rm addReport:report];
     [rm release];
     
@@ -200,10 +206,9 @@
 
 - (void)viewDidUnload
 {
-    [self setMapView:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    [self setMapView:nil];
+    self.tabBarController.navigationItem.rightBarButtonItem = nil;
 }
 
 

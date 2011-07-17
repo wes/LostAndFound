@@ -20,9 +20,7 @@
  init method
  --------------------------------------------------------------------------------*/
 -(id)init {
-	
 	appDelegate = (MindItAppDelegate *)[[UIApplication sharedApplication]delegate];
-	
 	return self;
 }
 
@@ -57,6 +55,8 @@
     UIDevice *myDevice = [UIDevice currentDevice];
     NSString *deviceUDID = [myDevice uniqueIdentifier];
 
+    NSLog(@"ASDF %@", reportToAdd);
+    
 //    if(reportToAdd.isFoundReport)
         url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=%@&lat=%@&lng=%@&text=%@", deviceUDID, reportToAdd.title, reportToAdd.lat, reportToAdd.lng, reportToAdd.subtitle];
 //    else

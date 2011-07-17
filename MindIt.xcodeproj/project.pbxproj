@@ -365,9 +365,6 @@
 		7D7A7C3F13AF22100008CF06 = {
 			isa = PBXGroup;
 			children = (
-				DE239FC613D3590400936FE6 /* libxml2.dylib */,
-				DE239FC413D358F500936FE6 /* libz.dylib */,
-				DE239FC113D358EA00936FE6 /* Security.framework */,
 				7D7A7C5413AF22120008CF06 /* MindIt */,
 				7D7A7C4D13AF22120008CF06 /* Frameworks */,
 				7D7A7C4B13AF22120008CF06 /* Products */,
@@ -385,6 +382,9 @@
 		7D7A7C4D13AF22120008CF06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE239FC613D3590400936FE6 /* libxml2.dylib */,
+				DE239FC413D358F500936FE6 /* libz.dylib */,
+				DE239FC113D358EA00936FE6 /* Security.framework */,
 				7D7A7F3A13D008B70008CF06 /* CoreLocation.framework */,
 				7D7A7F3813CF02900008CF06 /* MapKit.framework */,
 				7D7A7F2713CACDF90008CF06 /* MessageUI.framework */,
