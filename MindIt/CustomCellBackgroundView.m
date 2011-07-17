@@ -1,4 +1,3 @@
-//http://stackoverflow.com/questions/400965/how-to-customize-the-background-border-colors-of-a-grouped-table-view
 //
 //  CustomCellBackgroundView.m
 //
@@ -19,7 +18,7 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect,
 }
 
 - (id)initWithFrame:(CGRect)frame {
-    if (self == [super initWithFrame:frame]) {
+    if (self = [super initWithFrame:frame]) {
         // Initialization code
     }
     return self;
@@ -51,35 +50,12 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect,
         CGContextAddLineToPoint(c, rect.size.width, 10.0f);
         CGContextStrokePath(c);
         CGContextClipToRect(c, CGRectMake(0.0f, 10.0f, rect.size.width, rect.size.height));
-    } else if (position == CustomCellBackgroundViewPositionSingle) {
-        CGFloat minx = CGRectGetMinX(rect) , midx = CGRectGetMidX(rect), maxx = CGRectGetMaxX(rect) ;
-        CGFloat miny = CGRectGetMinY(rect) , midy = CGRectGetMidY(rect) , maxy = CGRectGetMaxY(rect) ;
-        minx = minx + 1;
-        miny = miny + 1;
-        maxx = maxx - 1;
-        maxy = maxy - 1;
-        
-        CGContextMoveToPoint(c, minx, midy);
-        CGContextAddArcToPoint(c, minx, miny, midx, miny, 10.0f);
-        CGContextAddArcToPoint(c, maxx, miny, maxx, midy, 10.0f);
-        CGContextAddArcToPoint(c, maxx, maxy, midx, maxy, 10.0f);
-        CGContextAddArcToPoint(c, minx, maxy, minx, midy, 10.0f);
-        CGContextStrokePath(c);
-        CGContextBeginPath(c);
-        CGContextMoveToPoint(c, rect.size.width, 0.0f);
-        CGContextAddLineToPoint(c, rect.size.width, 10.0f);
-//        CGContextStrokePath(c);
-
-        // Close the path
-        CGContextClosePath(c);
-        // Fill & stroke the path
-        CGContextDrawPath(c, kCGPathFillStroke);    
     } else if (position == CustomCellBackgroundViewPositionMiddle) {
         CGContextFillRect(c, rect);
         CGContextBeginPath(c);
         CGContextMoveToPoint(c, 0.0f, 0.0f);
         CGContextAddLineToPoint(c, 0.0f, rect.size.height);
-        CGContextAddLineToPoint(c, rect.size.width, rect.size.height);
+        CGContextAddLineToPoint(c, rect.size.width, rect.size.height-20);
         CGContextAddLineToPoint(c, rect.size.width, 0.0f);
         CGContextStrokePath(c);
         return; // no need to bother drawing rounded corners, so we return
@@ -92,9 +68,9 @@ static void addRoundedRectToPath(CGContextRef context, CGRect rect,
     addRoundedRectToPath(c, rect, 10.0f, 10.0f);
     CGContextFillPath(c);  
     
-    CGContextSetLineWidth(c, 0.0f);  
+    CGContextSetLineWidth(c, 1);  
     CGContextBeginPath(c);
-    addRoundedRectToPath(c, rect, 10.f, 10.f);  
+    addRoundedRectToPath(c, rect, 10.0f, 10.0f);  
     CGContextStrokePath(c);     
 }
 

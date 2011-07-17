@@ -10,7 +10,13 @@
 
 
 @interface WhatTableCell : UITableViewCell {
+
+    IBOutlet UILabel *whatTextLabel;
     
 }
+
+@property (nonatomic, retain) IBOutlet UILabel *whatTextLabel;
+
+- (void)setLabel:(NSString *)labelText;
 
 @end

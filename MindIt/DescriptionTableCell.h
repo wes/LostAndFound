@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 
-@interface DescriptionTableCell : UITableViewCell {
-    
+@interface DescriptionTableCell : UITableViewCell <UITextFieldDelegate> {
+    IBOutlet UITextField *descriptionTextLabel;
 }
+
+@property (nonatomic, retain) IBOutlet UITextField *descriptionTextLabel;
+
+//- (IBAction)textFieldGainedFocus:(id)sender;
+//- (IBAction)textFieldLostFocus:(id)sender;
 
 @end

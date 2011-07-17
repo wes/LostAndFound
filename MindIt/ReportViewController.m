@@ -17,15 +17,14 @@
 #import "WhereMapTableCell.h"
 #import "DescriptionTableCell.h"
 
-
 @implementation ReportViewController
-@synthesize mapView, centerLng, centerLat, report, what, text, tableCells, isFound, segmentedControl;
+
+@synthesize report, text, tableCells, isFound, segmentedControl;
 
 @synthesize whatTableCell, whereTableCell, whereMapTableCell, descriptionTableCell;
 
 - (IBAction)toggleLostFoundAction:(id)sender {
     isFound = self.segmentedControl.selectedSegmentIndex;
-    
 }
 
 //- (void)awakeFromNib {
@@ -48,14 +47,19 @@
     [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
 }
 - (void)viewWillAppear:(BOOL)animated {
-    [self getTableCells];
-
     [super viewWillAppear:animated];
-    [self.tabBarController.navigationController setNavigationBarHidden:YES animated:YES];
+    [self getTableCells];
+    [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
+    self.tabBarController.navigationItem.title = @"Report";
+    
+
+//    UITableView *mapTableCellView = [self.tableCells objectAtIndex:2];
+//    [mapTableCellView  
+    
     // or self.navigationItem.title = MyNewTitle;
 //    [self.navigationItem.rightBarButtonItem setText:@"Save"];
 
-    mapOverlay.image = [UIImage imageNamed:@"mapoverlay.png"];
+
     
     
   /*   CLLocationCoordinate2D zoomLocation;
@@ -76,21 +80,21 @@
 }
 
 -(IBAction)textFieldFocused:(id) sender {
-    text.frame = CGRectMake(0.0, 45.0, 320.0, 150.0);
-    text.returnKeyType = UIReturnKeyDone;
-    [what setHidden:true];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:.4];
+    [self.theTableView setContentInset:UIEdgeInsetsMake(-185.0,0,0,0)];
+    [UIView commitAnimations];
 }
 
--(IBAction)textFieldDone:(id) sender {
-    text.frame = CGRectMake(0.0, 45.0, 320.0, 150.0);
-    [what setHidden:false];
-}
+//-(IBAction)textFieldDone:(id) sender {
+//    text.frame = CGRectMake(0.0, 45.0, 320.0, 150.0);
+////    [what setHidden:false];
+//}
 
 - (void)dealloc
 {
 
     [super dealloc];
-    [mapView release];
 	[lostOptions release];
 }
 
@@ -108,30 +112,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
 
-    
-    locationManager = [[CLLocationManager alloc] init];
-    [locationManager setDelegate:self];
-    [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
-    [locationManager startUpdatingLocation];
-    
-    [mapView setMapType:MKMapTypeStandard];
-
-    
-    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
-    region.span.longitudeDelta = 0.005;
-    region.span.latitudeDelta = 0.005;
-    [mapView setRegion:region animated:YES]; 
-    [mapView setDelegate:self];
-    [mapView setShowsUserLocation:YES];
-    mapView.showsUserLocation = YES;   
-    
-//    [what addTarget:self action:@selector(whatClicked:) forControlEvents:UIControlEventTouchUpInside];
-    
-//    UIButton *btn = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
-//    [self.navigationItem.rightBarButtonItem :[[UIBarButtonItem alloc] initWithCustomView:btn]];
-	
     lostOptions = [[NSMutableArray alloc] init];
 	[lostOptions addObject:@"Wallet"];
 	[lostOptions addObject:@"Keys"];
@@ -140,7 +121,7 @@
 
 }
 
-- (IBAction) whatClicked:(id) sender {
+- (void) whatRowClicked {
     SelectionListViewController *controller = [[SelectionListViewController alloc] init];
     controller.delegate = self;
     controller.list = lostOptions;
@@ -151,27 +132,46 @@
 }
 
 - (void)rowChosen:(NSInteger)row {
-    [self.what setTitle:[lostOptions objectAtIndex:row] forState:UIControlStateNormal];
+    
+    UITableViewCell *cell = [self.tableCells objectAtIndex:0];
+    [cell setLabel:[lostOptions objectAtIndex:row]];
+
+    
+//    [self.whatTextLabel setTitle:[lostOptions objectAtIndex:row] forState:UIControlStateNormal];
 }
 
 - (void)setEditingButtons {
 
-    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(done)];
-    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
-    [self.navigationItem.leftBarButtonItem setAlpha: 0];
-    [leftBarButtonItem release];
-    
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(done)];
-    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
-    [self.navigationItem.rightBarButtonItem setAlpha: 0];
+    
+    self.tabBarController.navigationItem.rightBarButtonItem = rightBarButtonItem;
+
     [rightBarButtonItem release];
-
+    
+    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
+    
+    self.tabBarController.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    
+    [leftBarButtonItem release];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation  {
-    CLLocationCoordinate2D loc = [newLocation coordinate];
-    [mapView setCenterCoordinate:loc];      
+- (void)cancel{
+    self.tabBarController.navigationItem.leftBarButtonItem = nil;
+    self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.4];
+    [self.theTableView setContentInset:UIEdgeInsetsMake(0,0,0,0)];
+    [UIView commitAnimations];
+
+//    UITableViewCell *cell = [[[DescriptionTableCell alloc] resignFirstResponder] autorelease];
+//    [cell.descriptionTextLabel resignFirstResponder];
+//    [self.view findAndResignFirstResonder];
+//    [self.tabBarController resignFirstResponder];
 }
+
+
+
+
 
 -(IBAction)navigationButtonEvent:(id)sender
 {
@@ -183,10 +183,10 @@
 	else
 	{
         //found
-        report.title = self.what.titleLabel.text;
+//        report.title = self.whatTextLabel.titleLabel.text;
         report.subtitle = self.text.text;
-        report.lat = self.centerLat;
-        report.lng = self.centerLng;
+        report.lat = [[self.tableCells objectAtIndex:2] centerLat];
+        report.lng = [[self.tableCells objectAtIndex:2] centerLng];
         report.categoryid = 0;
         RecordsManager *rm = [[RecordsManager alloc]init];
         [rm addReport:report];
@@ -195,41 +195,6 @@
 	}
 }
 
-- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
-    
-    self.centerLat = self.mapView.centerCoordinate.latitude;
-    self.centerLng = self.mapView.centerCoordinate.longitude;
-    
-//    NSLog(@"%f,%f",self.centerLat, self.centerLng);
-    
-}
-
--(MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(id <MKAnnotation>)annotation {
-    if ([annotation isKindOfClass:[MKUserLocation class]])
-        return nil;
-    static NSString *AnnotationViewID = @"annotationViewID";
-    MKAnnotationView *annotationView = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:AnnotationViewID];
-    
-    if (annotationView == nil) {
-        annotationView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID] autorelease];
-    }
-    
-    annotationView.canShowCallout = YES;
-    
-    if ([annotationView.annotation.title isEqualToString:@"One"]) {
-        UIImage *pinImage = [UIImage imageNamed:@"one.png"];
-        [annotationView setImage:pinImage];
-    }
-    
-    if ([annotationView.annotation.title isEqualToString:@"Two"]) {
-        UIImage *pinImage = [UIImage imageNamed:@"two.png"];
-        [annotationView setImage:pinImage];
-    }
-    
-    annotationView.annotation = annotation;
-    return annotationView;
-    
-}
 - (void)viewDidUnload
 {
     [self setMapView:nil];
@@ -246,6 +211,19 @@
 }
 
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+//    UITableViewCell *cell = [self.tableCells objectAtIndex:3];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:.4];
+    [self.theTableView setContentInset:UIEdgeInsetsMake(0,0,0,0)];
+    [UIView commitAnimations];
+
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
 #pragma mark Table
 
 //- (NSArray *)barCodes {
@@ -258,17 +236,25 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
+//    UITableViewCell *cell = [self.tableCells objectAtIndex:indexPath.row];
+//    UITableViewCell *cell = [self.tableCells objectAtIndex:indexPath.row];
+
+//    [cell.frame.hei
+//    [cell get
+    
+    float margin = 0;
     
     switch (indexPath.row) {
         case 0: // what
         case 1: // where
-            return 44;
+            return 44 + margin;
         break;
         case 2: // map
-            return 170;
+            return 177 + margin;
         break;
         case 3: // desc
-            return 70;
+            return 70 + margin;
         break;
     }
     
@@ -292,12 +278,27 @@
 */
 
 - (NSInteger)tableView:(UITableView *)theTableView numberOfRowsInSection:(NSInteger)section {
-	return 4;
+	return [self.tableCells count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+//    NSLog(@"TEST: %i", indexPath.row);
+
     UITableViewCell *cell = [self.tableCells objectAtIndex:indexPath.row];
+    
+    CustomCellBackgroundView *bgView = [[CustomCellBackgroundView alloc] initWithFrame:CGRectZero];
+    
+    bgView.fillColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
+    bgView.borderColor = [UIColor colorWithWhite:1.0f alpha:0.62f];
+    bgView.position = CustomCellBackgroundViewPositionSingle;
+//    bgView.frame = CGRectMake(0, 0, 300, 44);
+//    bgView.cli
+    
+    cell.backgroundView = bgView;
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     if (cell) return  cell;
     
     
@@ -454,6 +455,12 @@
 
 - (void)tableView:(UITableView *)theTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
+    switch(indexPath.row){
+        case 0:
+            [self whatRowClicked];
+        break;
+    }
+    
     //	NSDictionary *ticket = [[self barCodes] objectAtIndex:indexPath.row];
     //	NSString *scanCount = [ticket valueForKey:@"scan_count"];
     //	NSString *upc = [ticket valueForKey:@"upc"];

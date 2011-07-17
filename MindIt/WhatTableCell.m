@@ -7,9 +7,15 @@
 //
 
 #import "WhatTableCell.h"
-
+#import "CustomCellBackgroundView.h"
 
 @implementation WhatTableCell
+
+@synthesize whatTextLabel;
+
+//-(void)awakeFromNib{
+//    self = [super initWithStyle: CustomCellBackgroundViewPositionMiddle reuseIdentifier:@"Cell"];
+//}
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -20,9 +26,13 @@
     return self;
 }
 
+- (void)setLabel:(NSString *)labelText{
+    [self.whatTextLabel setText: labelText];
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
-    [super setSelected:selected animated:animated];
+//    [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
 }

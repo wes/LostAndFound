@@ -55,6 +55,12 @@
 		DE0B7DFB13D2E95A005898FE /* WhereTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DFA13D2E95A005898FE /* WhereTableCell.m */; };
 		DE0B7DFE13D2E978005898FE /* DescriptionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DFD13D2E977005898FE /* DescriptionTableCell.m */; };
 		DE0B7E0113D2EA1C005898FE /* WhereMapTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7E0013D2EA1B005898FE /* WhereMapTableCell.m */; };
+		DEE8202013D300380081FF8A /* found.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE8201C13D300380081FF8A /* found.png */; };
+		DEE8202113D300380081FF8A /* foundBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE8201D13D300380081FF8A /* foundBtn.png */; };
+		DEE8202213D300380081FF8A /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE8201E13D300380081FF8A /* foundBtnFound.png */; };
+		DEE8202313D300380081FF8A /* foundBtnLost.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE8201F13D300380081FF8A /* foundBtnLost.png */; };
+		DEE8202513D319E90081FF8A /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE8202413D319E90081FF8A /* mapoverlay.png */; };
+		DEE8202713D31A870081FF8A /* stripe.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE8202613D31A870081FF8A /* stripe.png */; };
 		EC39288313D26E19003D1DD0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC39288113D26E19003D1DD0 /* SearchViewController.m */; };
 		EC39288413D26E19003D1DD0 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC39288213D26E19003D1DD0 /* SearchViewController.xib */; };
 		EC39290F13D284EE003D1DD0 /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC39290813D284EE003D1DD0 /* SelectionListViewController.m */; };
@@ -152,6 +158,12 @@
 		DE0B7DFD13D2E977005898FE /* DescriptionTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionTableCell.m; sourceTree = "<group>"; };
 		DE0B7DFF13D2EA1A005898FE /* WhereMapTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereMapTableCell.h; sourceTree = "<group>"; };
 		DE0B7E0013D2EA1B005898FE /* WhereMapTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereMapTableCell.m; sourceTree = "<group>"; };
+		DEE8201C13D300380081FF8A /* found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = found.png; path = Images/found.png; sourceTree = "<group>"; };
+		DEE8201D13D300380081FF8A /* foundBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtn.png; path = Images/foundBtn.png; sourceTree = "<group>"; };
+		DEE8201E13D300380081FF8A /* foundBtnFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnFound.png; path = Images/foundBtnFound.png; sourceTree = "<group>"; };
+		DEE8201F13D300380081FF8A /* foundBtnLost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnLost.png; path = Images/foundBtnLost.png; sourceTree = "<group>"; };
+		DEE8202413D319E90081FF8A /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapoverlay.png; path = Images/mapoverlay.png; sourceTree = "<group>"; };
+		DEE8202613D31A870081FF8A /* stripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stripe.png; path = Images/stripe.png; sourceTree = "<group>"; };
 		EC39288013D26E19003D1DD0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		EC39288113D26E19003D1DD0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		EC39288213D26E19003D1DD0 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -283,8 +295,8 @@
 			children = (
 				EC39294113D2889F003D1DD0 /* RewardViewController.m */,
 				EC39294313D2889F003D1DD0 /* RewardViewController.h */,
-				EC39293C13D2888F003D1DD0 /* DetailViewController.m */,
 				EC39293E13D2888F003D1DD0 /* DetailViewController.h */,
+				EC39293C13D2888F003D1DD0 /* DetailViewController.m */,
 				EC39290813D284EE003D1DD0 /* SelectionListViewController.m */,
 				EC39290913D284EE003D1DD0 /* SelectionListViewController.h */,
 				EC39290B13D284EE003D1DD0 /* MessageObj.m */,
@@ -370,6 +382,12 @@
 		7D7A7CAC13B047490008CF06 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DEE8202613D31A870081FF8A /* stripe.png */,
+				DEE8202413D319E90081FF8A /* mapoverlay.png */,
+				DEE8201C13D300380081FF8A /* found.png */,
+				DEE8201D13D300380081FF8A /* foundBtn.png */,
+				DEE8201E13D300380081FF8A /* foundBtnFound.png */,
+				DEE8201F13D300380081FF8A /* foundBtnLost.png */,
 				7D7A7F3C13D015410008CF06 /* one.png */,
 				7D7A7F3D13D015410008CF06 /* two.png */,
 			);
@@ -491,6 +509,12 @@
 				DE0B7DE013D2D65A005898FE /* WhereTableCell.xib in Resources */,
 				DE0B7DE213D2D72F005898FE /* WhereMapTableCell.xib in Resources */,
 				DE0B7DE413D2D79F005898FE /* DescriptionTableCell.xib in Resources */,
+				DEE8202013D300380081FF8A /* found.png in Resources */,
+				DEE8202113D300380081FF8A /* foundBtn.png in Resources */,
+				DEE8202213D300380081FF8A /* foundBtnFound.png in Resources */,
+				DEE8202313D300380081FF8A /* foundBtnLost.png in Resources */,
+				DEE8202513D319E90081FF8A /* mapoverlay.png in Resources */,
+				DEE8202713D31A870081FF8A /* stripe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
