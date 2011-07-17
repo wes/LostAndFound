@@ -91,7 +91,6 @@
 						<string key="NSFrame">{{0, 42}, {320, 374}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC4xNzE1MzI4NDY3AA</bytes>
@@ -138,7 +137,6 @@
 								<string key="NSFrame">{{198, 11}, {92, 21}}</string>
 								<reference key="NSSuperview" ref="209610435"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -231,7 +229,6 @@
 								<string key="NSFrame">{{20, 11}, {93, 22}}</string>
 								<reference key="NSSuperview" ref="747132288"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
@@ -293,7 +290,6 @@
 								<string key="NSFrame">{{5, 5}, {290, 167}}</string>
 								<reference key="NSSuperview" ref="45743505"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
@@ -333,10 +329,9 @@
 							<object class="IBUITextField" id="134306901">
 								<reference key="NSNextResponder" ref="380929013"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{9, 19}, {304, 31}}</string>
+								<string key="NSFrame">{{15, 20}, {281, 31}}</string>
 								<reference key="NSSuperview" ref="380929013"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -758,13 +753,11 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>textFieldDone:</string>
 							<string>textFieldFocused:</string>
 							<string>toggleLostFoundAction:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -773,16 +766,11 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>textFieldDone:</string>
 							<string>textFieldFocused:</string>
 							<string>toggleLostFoundAction:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBActionInfo">
-								<string key="name">textFieldDone:</string>
-								<string key="candidateClassName">id</string>
-							</object>
 							<object class="IBActionInfo">
 								<string key="name">textFieldFocused:</string>
 								<string key="candidateClassName">id</string>

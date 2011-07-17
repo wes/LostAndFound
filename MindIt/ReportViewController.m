@@ -84,6 +84,7 @@
     [UIView setAnimationDuration:.4];
     [self.theTableView setContentInset:UIEdgeInsetsMake(-185.0,0,0,0)];
     [UIView commitAnimations];
+    [self setEditingButtons];
 }
 
 //-(IBAction)textFieldDone:(id) sender {
@@ -138,23 +139,24 @@
     UITableViewCell *cell = [self.tableCells objectAtIndex:0];
     [cell setLabel:[lostOptions objectAtIndex:row]];
 
+    [self setEditingButtons];
     
 //    [self.whatTextLabel setTitle:[lostOptions objectAtIndex:row] forState:UIControlStateNormal];
 }
 
 - (void)setEditingButtons {
 
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(done)];
+    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save)];
     
     self.tabBarController.navigationItem.rightBarButtonItem = rightBarButtonItem;
 
     [rightBarButtonItem release];
     
-    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
-    
-    self.tabBarController.navigationItem.leftBarButtonItem = leftBarButtonItem;
-    
-    [leftBarButtonItem release];
+//    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
+//    
+//    self.tabBarController.navigationItem.leftBarButtonItem = leftBarButtonItem;
+//    
+//    [leftBarButtonItem release];
 }
 
 - (void)cancel{
@@ -175,26 +177,25 @@
 
 
 
--(IBAction)navigationButtonEvent:(id)sender
+-(BOOL)saveRecord
 {
-	if([sender tag] == 1)
-	{
-        //lot
-		[self.navigationController popViewControllerAnimated:TRUE];
-	}
-	else
-	{
-        //found
-//        report.title = self.whatTextLabel.titleLabel.text;
-        report.subtitle = self.text.text;
-        report.lat = [[self.tableCells objectAtIndex:2] centerLat];
-        report.lng = [[self.tableCells objectAtIndex:2] centerLng];
-        report.categoryid = 0;
-        RecordsManager *rm = [[RecordsManager alloc]init];
-        [rm addReport:report];
-        [rm release];
-		
-	}
+
+    UITableView *titleView = [self.tableCells objectAtIndex:0];
+    UITableView *mapView = [self.tableCells objectAtIndex:1];
+    UITableView *subTitleView = [self.tableCells objectAtIndex:3];
+    
+    //found
+    report.title = [titleView getText];
+    report.subtitle = [mapView getText];
+    report.lat = [[self.tableCells objectAtIndex:2] centerLat];
+    report.lng = [[self.tableCells objectAtIndex:2] centerLng];
+//    report.categoryid = 0;
+    RecordsManager *rm = [[RecordsManager alloc] init];
+    BOOL success = [rm addReport:report];
+    [rm release];
+    
+    return success;
+    
 }
 
 - (void)viewDidUnload

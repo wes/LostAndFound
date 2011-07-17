@@ -17,6 +17,10 @@
 //    self = [super initWithStyle: CustomCellBackgroundViewPositionMiddle reuseIdentifier:@"Cell"];
 //}
 
+-(NSString *)getText{
+    return whatTextLabel.text;
+}
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

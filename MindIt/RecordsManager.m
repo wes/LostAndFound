@@ -57,13 +57,13 @@
     UIDevice *myDevice = [UIDevice currentDevice];
     NSString *deviceUDID = [myDevice uniqueIdentifier];
 
-    if(reportToAdd.isFoundReport)
-        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=0&lat=%@&lng=%@&text=%@", deviceUDID, reportToAdd.lat, reportToAdd.lng, reportToAdd.subtitle];
-    else
-        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=lost&user=%@&cat=0&lat=%@&lng=%@&text=%@", deviceUDID, reportToAdd.lat, reportToAdd.lng, reportToAdd.subtitle];
-	responseData = [[NSMutableData data] retain];
+//    if(reportToAdd.isFoundReport)
+        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=%@&lat=%@&lng=%@&text=%@", deviceUDID, reportToAdd.title, reportToAdd.lat, reportToAdd.lng, reportToAdd.subtitle];
+//    else
+//        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=%@&lat=%@&lng=%@&text=%@", deviceUDID, reportToAdd.title, reportToAdd.lat, reportToAdd.lng, reportToAdd.subtitle];
+    responseData = [[NSMutableData data] retain];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-    connRec =  [[NSURLConnection alloc] initWithRequest:request delegate:self ];
+    connRec = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     return YES;
 }
 

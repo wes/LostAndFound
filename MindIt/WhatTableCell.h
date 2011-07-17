@@ -19,4 +19,6 @@
 
 - (void)setLabel:(NSString *)labelText;
 
+- (NSString *)getText;
+
 @end
