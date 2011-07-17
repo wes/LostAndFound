@@ -68,7 +68,6 @@
 {
 	NSInteger returnValue = 1;
 	tableView.rowHeight = 100;
-	tableView.backgroundColor = [UIColor darkGrayColor];
 	tableView.separatorColor = [UIColor clearColor];
 	returnValue = [appDelegate.arr_Messages count];
 	

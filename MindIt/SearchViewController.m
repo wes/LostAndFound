@@ -49,7 +49,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	NSLog(@"ASDF");
+	//NSLog(@"ASDF");
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"stripe.png"]]];
 	
 	cLocation.longitude = 150.000;
 	cLocation.latitude = 150.000;
@@ -57,11 +58,12 @@
 	sBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,0,320,44)];
 	sBar.delegate = self;
 	[self.view addSubview:sBar];
-	tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 44, 320, 400)];
+    
+	//tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 44, 320, 400)];
 	tableView.delegate = self;
 	tableView.dataSource = self;
 	tableView.hidden=YES;
-	[self.view addSubview:tableView];
+	//[self.view addSubview:tableView];
 	//[self.tableView addSubview:self.progressInd];
 	
 	
@@ -151,7 +153,7 @@
 	//NSString* theText =  //first get the text that will be displayed in the cell
 	//CGSize textSize = [theTextsizeWithFont: font constrainedToSize:CGSizeMake(280, 500)];
 	
-	return 57;
+	return 75;
 }
 
 
@@ -169,38 +171,36 @@
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cellular"];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellular"] autorelease];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 		
-        titleLabel = [[[UILabel alloc] initWithFrame:CGRectMake(50.0, 5.0, 270.0, 25.0)] autorelease];
+        titleLabel = [[[UILabel alloc] initWithFrame:CGRectMake(70.0, 5.0, 270.0, 25.0)] autorelease];
         titleLabel.tag = TITLELABEL_TAG;
         titleLabel.font = [UIFont boldSystemFontOfSize:18.0];
-        titleLabel.textColor = [UIColor orangeColor];
+        titleLabel.textColor = [UIColor colorWithRed:0.000 green:0.600 blue:1.000 alpha:1.000];
         [cell.contentView addSubview:titleLabel];
 		
-        infoLabel = [[[UILabel alloc] initWithFrame:CGRectMake(125.0, 10.0, 225.0, 15.0)] autorelease];
+        infoLabel = [[[UILabel alloc] initWithFrame:CGRectMake(140.0, 10.0, 225.0, 15.0)] autorelease];
         infoLabel.tag = INFOLABEL_TAG;
-        infoLabel.font = [UIFont systemFontOfSize:13.0];
-        infoLabel.textColor = [UIColor darkGrayColor];
+        infoLabel.font = [UIFont systemFontOfSize:12.0];
+        infoLabel.textColor = [UIColor lightGrayColor];
         [cell.contentView addSubview:infoLabel];
 		
-		infoLabel2 = [[[UILabel alloc] initWithFrame:CGRectMake(50.0, 30.0, 250.0, 15.0)] autorelease];
+		infoLabel2 = [[[UILabel alloc] initWithFrame:CGRectMake(70.0, 30.0, 250.0, 18.0)] autorelease];
         infoLabel2.tag = INFOLABEL2_TAG;
-        infoLabel2.font = [UIFont systemFontOfSize:13.0];
+        infoLabel2.font = [UIFont systemFontOfSize:16.0];
         infoLabel2.textColor = [UIColor darkGrayColor];
         [cell.contentView addSubview:infoLabel2];
 		
-		mileLabel = [[[UILabel alloc] initWithFrame:CGRectMake(280.0, 3.0, 35.0, 15.0)] autorelease];
+		mileLabel = [[[UILabel alloc] initWithFrame:CGRectMake(70.0, 50.0, 35.0, 15.0)] autorelease];
         mileLabel.tag = MILELABEL_TAG;
         mileLabel.font = [UIFont systemFontOfSize:10.0];
-        mileLabel.textColor = [UIColor darkGrayColor];
-		mileLabel.textAlignment = UITextAlignmentRight;
+        mileLabel.textColor = [UIColor lightGrayColor];
         [cell.contentView addSubview:mileLabel];
 		
-		photo = [[[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 50, 50)]autorelease];
+		photo = [[[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 47, 47)]autorelease];
 		photo.tag = PHOTOIMAGE_TAG;
 		[cell.contentView addSubview:photo];
-    } 
-	else {
+    } else {
         titleLabel = (UILabel *)[cell.contentView viewWithTag:TITLELABEL_TAG];
         infoLabel = (UILabel *)[cell.contentView viewWithTag:INFOLABEL_TAG];
         infoLabel2 = (UILabel *)[cell.contentView viewWithTag:INFOLABEL2_TAG];
@@ -259,16 +259,19 @@
 	float stringFloat = [[recordArr objectForKey:@"distance"] floatValue];
 	
 	mileLabel.text = [NSString stringWithFormat:@"%3.1f mi",stringFloat];
+    
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+    cell.image = [UIImage imageNamed:@"phone.png"];
 	
 	return cell;
 }
-
 
 #pragma mark -
 #pragma mark Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ReportObj *report = [ReportObj reportWithDictionaryRepresentation:(NSDictionary *)[aDict objectAtIndex:[indexPath row]]];
     detailView = [[DetailViewController alloc] initWithReport:report];
+    [[self tableView] deselectRowAtIndexPath:indexPath animated:YES];
 	[[self tabBarNavigationController] pushViewController:detailView animated:YES];
 }
  

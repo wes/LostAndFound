@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E47FB513D35A5F00E986EE /* paperbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FB313D35A5F00E986EE /* paperbottom.png */; };
+		40E47FB613D35A5F00E986EE /* paperbottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FB413D35A5F00E986EE /* paperbottom@2x.png */; };
+		40E47FC113D3645C00E986EE /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FBF13D3645C00E986EE /* phone.png */; };
+		40E47FC213D3645C00E986EE /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FC013D3645C00E986EE /* phone@2x.png */; };
 		7D55A27E13D352270040A214 /* found.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26E13D352270040A214 /* found.png */; };
 		7D55A27F13D352270040A214 /* foundBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26F13D352270040A214 /* foundBtn.png */; };
 		7D55A28013D352270040A214 /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27013D352270040A214 /* foundBtnFound.png */; };
@@ -120,6 +124,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40E47FB313D35A5F00E986EE /* paperbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paperbottom.png; path = ../../../iPhone_apps/LostAndFound/MindIt/Images/paperbottom.png; sourceTree = "<group>"; };
+		40E47FB413D35A5F00E986EE /* paperbottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "paperbottom@2x.png"; path = "../../../iPhone_apps/LostAndFound/MindIt/Images/paperbottom@2x.png"; sourceTree = "<group>"; };
+		40E47FBF13D3645C00E986EE /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = ../../../iPhone_apps/LostAndFound/MindIt/Images/phone.png; sourceTree = "<group>"; };
+		40E47FC013D3645C00E986EE /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone@2x.png"; path = "../../../iPhone_apps/LostAndFound/MindIt/Images/phone@2x.png"; sourceTree = "<group>"; };
 		7D55A26E13D352270040A214 /* found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = found.png; path = Images/found.png; sourceTree = "<group>"; };
 		7D55A26F13D352270040A214 /* foundBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtn.png; path = Images/foundBtn.png; sourceTree = "<group>"; };
 		7D55A27013D352270040A214 /* foundBtnFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnFound.png; path = Images/foundBtnFound.png; sourceTree = "<group>"; };
@@ -467,6 +475,7 @@
 		7D7A7C7613AF2A6E0008CF06 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D7A7CAC13B047490008CF06 /* Images */,
 				7D55A2CA13D352D10040A214 /* DescriptionTableCell.xib */,
 				7D55A2CB13D352D10040A214 /* DetailViewController.xib */,
 				7D55A2CC13D352D10040A214 /* MessageDetailViewController.xib */,
@@ -476,7 +485,6 @@
 				7D55A2D013D352D10040A214 /* WhatTableCell.xib */,
 				7D55A2D113D352D10040A214 /* WhereMapTableCell.xib */,
 				7D55A2D213D352D10040A214 /* WhereTableCell.xib */,
-				7D7A7CAC13B047490008CF06 /* Images */,
 				7D7A7F3413CEEA020008CF06 /* ReportViewController.xib */,
 				7D98B7D013D2455B006B39A5 /* InboxViewController.xib */,
 				7D98B7D113D2455B006B39A5 /* SearchViewController.xib */,
@@ -524,6 +532,10 @@
 		7D7A7CAC13B047490008CF06 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				40E47FBF13D3645C00E986EE /* phone.png */,
+				40E47FC013D3645C00E986EE /* phone@2x.png */,
+				40E47FB313D35A5F00E986EE /* paperbottom.png */,
+				40E47FB413D35A5F00E986EE /* paperbottom@2x.png */,
 				7D55A28E13D352840040A214 /* Default.png */,
 				7D55A28F13D352840040A214 /* Default@2x.png */,
 				7D55A29013D352840040A214 /* flagbutton.png */,
@@ -698,6 +710,10 @@
 				7D55A2D913D352D10040A214 /* WhatTableCell.xib in Resources */,
 				7D55A2DA13D352D10040A214 /* WhereMapTableCell.xib in Resources */,
 				7D55A2DB13D352D10040A214 /* WhereTableCell.xib in Resources */,
+				40E47FB513D35A5F00E986EE /* paperbottom.png in Resources */,
+				40E47FB613D35A5F00E986EE /* paperbottom@2x.png in Resources */,
+				40E47FC113D3645C00E986EE /* phone.png in Resources */,
+				40E47FC213D3645C00E986EE /* phone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

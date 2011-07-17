@@ -35,7 +35,7 @@
 	UIButton *button = [[PayPal getInstance] getPayButtonWithTarget:self andAction:action andButtonType:type];
 	CGRect frame = button.frame;
 	frame.origin.x = 15;
-	frame.origin.y = 140;
+	frame.origin.y = 120;
 	button.frame = frame;
 	[self.view addSubview:button];
 	

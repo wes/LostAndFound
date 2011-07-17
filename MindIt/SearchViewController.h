@@ -22,7 +22,7 @@
 
 @property (retain,nonatomic) DetailViewController *detailView;
 @property (retain,nonatomic) UISearchBar *sBar;//search bar
-@property (retain,nonatomic) UITableView *tableView;
+@property (retain,nonatomic) IBOutlet UITableView *tableView;
 @property (retain,nonatomic) NSMutableData *responseData;
 @property (retain,nonatomic) NSArray *aDict;
 @property (retain,nonatomic) UIActivityIndicatorView *progressInd;
