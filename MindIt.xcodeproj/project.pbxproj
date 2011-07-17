@@ -44,10 +44,17 @@
 		7D98B7D513D2455B006B39A5 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */; };
 		7DA737F413D183EE00E21268 /* ReportObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA737F313D183EE00E21268 /* ReportObj.m */; };
 		DE0B7DC113D2B111005898FE /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DC013D2B110005898FE /* TabBarController.xib */; };
-		DE0B7DDE13D2D647005898FE /* What.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DDD13D2D647005898FE /* What.xib */; };
-		DE0B7DE013D2D65A005898FE /* Where.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DDF13D2D65A005898FE /* Where.xib */; };
-		DE0B7DE213D2D72F005898FE /* WhereMap.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DE113D2D72E005898FE /* WhereMap.xib */; };
-		DE0B7DE413D2D79F005898FE /* Description.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DE313D2D79E005898FE /* Description.xib */; };
+		DE0B7DDE13D2D647005898FE /* WhatTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DDD13D2D647005898FE /* WhatTableCell.xib */; };
+		DE0B7DE013D2D65A005898FE /* WhereTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DDF13D2D65A005898FE /* WhereTableCell.xib */; };
+		DE0B7DE213D2D72F005898FE /* WhereMapTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DE113D2D72E005898FE /* WhereMapTableCell.xib */; };
+		DE0B7DE413D2D79F005898FE /* DescriptionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0B7DE313D2D79E005898FE /* DescriptionTableCell.xib */; };
+		DE0B7DED13D2D86A005898FE /* CustomCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DEC13D2D86A005898FE /* CustomCellBackgroundView.m */; };
+		DE0B7DF313D2D8DD005898FE /* LFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DF013D2D8DD005898FE /* LFViewController.m */; };
+		DE0B7DF413D2D8DD005898FE /* LFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DF213D2D8DD005898FE /* LFTableViewController.m */; };
+		DE0B7DF813D2E93F005898FE /* WhatTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DF713D2E93E005898FE /* WhatTableCell.m */; };
+		DE0B7DFB13D2E95A005898FE /* WhereTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DFA13D2E95A005898FE /* WhereTableCell.m */; };
+		DE0B7DFE13D2E978005898FE /* DescriptionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7DFD13D2E977005898FE /* DescriptionTableCell.m */; };
+		DE0B7E0113D2EA1C005898FE /* WhereMapTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0B7E0013D2EA1B005898FE /* WhereMapTableCell.m */; };
 		EC39288313D26E19003D1DD0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC39288113D26E19003D1DD0 /* SearchViewController.m */; };
 		EC39288413D26E19003D1DD0 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC39288213D26E19003D1DD0 /* SearchViewController.xib */; };
 		EC39290F13D284EE003D1DD0 /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC39290813D284EE003D1DD0 /* SelectionListViewController.m */; };
@@ -126,10 +133,25 @@
 		7DA737F213D183EE00E21268 /* ReportObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportObj.h; sourceTree = "<group>"; };
 		7DA737F313D183EE00E21268 /* ReportObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportObj.m; sourceTree = "<group>"; };
 		DE0B7DC013D2B110005898FE /* TabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
-		DE0B7DDD13D2D647005898FE /* What.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = What.xib; sourceTree = "<group>"; };
-		DE0B7DDF13D2D65A005898FE /* Where.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Where.xib; sourceTree = "<group>"; };
-		DE0B7DE113D2D72E005898FE /* WhereMap.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhereMap.xib; sourceTree = "<group>"; };
-		DE0B7DE313D2D79E005898FE /* Description.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Description.xib; sourceTree = "<group>"; };
+		DE0B7DDD13D2D647005898FE /* WhatTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhatTableCell.xib; sourceTree = "<group>"; };
+		DE0B7DDF13D2D65A005898FE /* WhereTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhereTableCell.xib; sourceTree = "<group>"; };
+		DE0B7DE113D2D72E005898FE /* WhereMapTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhereMapTableCell.xib; sourceTree = "<group>"; };
+		DE0B7DE313D2D79E005898FE /* DescriptionTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionTableCell.xib; sourceTree = "<group>"; };
+		DE0B7DEB13D2D86A005898FE /* CustomCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackgroundView.h; sourceTree = "<group>"; };
+		DE0B7DEC13D2D86A005898FE /* CustomCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackgroundView.m; sourceTree = "<group>"; };
+		DE0B7DEF13D2D8DD005898FE /* LFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFViewController.h; sourceTree = "<group>"; };
+		DE0B7DF013D2D8DD005898FE /* LFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFViewController.m; sourceTree = "<group>"; };
+		DE0B7DF113D2D8DD005898FE /* LFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFTableViewController.h; sourceTree = "<group>"; };
+		DE0B7DF213D2D8DD005898FE /* LFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFTableViewController.m; sourceTree = "<group>"; };
+		DE0B7DF513D2D9CD005898FE /* JSONConsumerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONConsumerDelegate.h; sourceTree = "<group>"; };
+		DE0B7DF613D2E93E005898FE /* WhatTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatTableCell.h; sourceTree = "<group>"; };
+		DE0B7DF713D2E93E005898FE /* WhatTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatTableCell.m; sourceTree = "<group>"; };
+		DE0B7DF913D2E959005898FE /* WhereTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereTableCell.h; sourceTree = "<group>"; };
+		DE0B7DFA13D2E95A005898FE /* WhereTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereTableCell.m; sourceTree = "<group>"; };
+		DE0B7DFC13D2E977005898FE /* DescriptionTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionTableCell.h; sourceTree = "<group>"; };
+		DE0B7DFD13D2E977005898FE /* DescriptionTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionTableCell.m; sourceTree = "<group>"; };
+		DE0B7DFF13D2EA1A005898FE /* WhereMapTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhereMapTableCell.h; sourceTree = "<group>"; };
+		DE0B7E0013D2EA1B005898FE /* WhereMapTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereMapTableCell.m; sourceTree = "<group>"; };
 		EC39288013D26E19003D1DD0 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		EC39288113D26E19003D1DD0 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		EC39288213D26E19003D1DD0 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -223,6 +245,7 @@
 			children = (
 				7D7A7C5D13AF22120008CF06 /* MindItAppDelegate.h */,
 				7D7A7C5E13AF22120008CF06 /* MindItAppDelegate.m */,
+				DE0B7DEE13D2D8CA005898FE /* NavigationControllers */,
 				7D7A7C7513AF2A500008CF06 /* ViewControllers */,
 				EC39292E13D28878003D1DD0 /* Library */,
 				7D7A7E4813C6D2C80008CF06 /* Facebook SDK */,
@@ -274,8 +297,18 @@
 				7D98B7CB13D244CB006B39A5 /* SettingsViewController.m */,
 				7D7A7F3213CEE9FF0008CF06 /* ReportViewController.h */,
 				7D7A7F3313CEEA000008CF06 /* ReportViewController.m */,
+				DE0B7DF613D2E93E005898FE /* WhatTableCell.h */,
+				DE0B7DF713D2E93E005898FE /* WhatTableCell.m */,
+				DE0B7DF913D2E959005898FE /* WhereTableCell.h */,
+				DE0B7DFA13D2E95A005898FE /* WhereTableCell.m */,
+				DE0B7DFF13D2EA1A005898FE /* WhereMapTableCell.h */,
+				DE0B7E0013D2EA1B005898FE /* WhereMapTableCell.m */,
+				DE0B7DFC13D2E977005898FE /* DescriptionTableCell.h */,
+				DE0B7DFD13D2E977005898FE /* DescriptionTableCell.m */,
 				EC39288013D26E19003D1DD0 /* SearchViewController.h */,
 				EC39288113D26E19003D1DD0 /* SearchViewController.m */,
+				DE0B7DEB13D2D86A005898FE /* CustomCellBackgroundView.h */,
+				DE0B7DEC13D2D86A005898FE /* CustomCellBackgroundView.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -288,15 +321,15 @@
 				EC39294213D2889F003D1DD0 /* RewardViewController.xib */,
 				EC39290A13D284EE003D1DD0 /* PickerView.xib */,
 				EC39288213D26E19003D1DD0 /* SearchViewController.xib */,
-				7D7A7F3413CEEA020008CF06 /* ReportViewController.xib */,
 				7D98B7D013D2455B006B39A5 /* InboxViewController.xib */,
 				7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */,
 				DE0B7DC013D2B110005898FE /* TabBarController.xib */,
 				7D7A7C6013AF22120008CF06 /* MainWindow.xib */,
-				DE0B7DDD13D2D647005898FE /* What.xib */,
-				DE0B7DDF13D2D65A005898FE /* Where.xib */,
-				DE0B7DE113D2D72E005898FE /* WhereMap.xib */,
-				DE0B7DE313D2D79E005898FE /* Description.xib */,
+				7D7A7F3413CEEA020008CF06 /* ReportViewController.xib */,
+				DE0B7DDD13D2D647005898FE /* WhatTableCell.xib */,
+				DE0B7DDF13D2D65A005898FE /* WhereTableCell.xib */,
+				DE0B7DE113D2D72E005898FE /* WhereMapTableCell.xib */,
+				DE0B7DE313D2D79E005898FE /* DescriptionTableCell.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -304,6 +337,7 @@
 		7D7A7C8A13B03A7B0008CF06 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				DE0B7DF513D2D9CD005898FE /* JSONConsumerDelegate.h */,
 				7D7A7C8B13B03AA50008CF06 /* StringConstant.h */,
 				7D7A7F4013D026110008CF06 /* Annotation.h */,
 				7D7A7F4113D026140008CF06 /* Annotation.m */,
@@ -361,6 +395,17 @@
 				7D7A7E5613C6D2C90008CF06 /* NSString+HTML.m */,
 			);
 			path = "Facebook SDK";
+			sourceTree = "<group>";
+		};
+		DE0B7DEE13D2D8CA005898FE /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE0B7DEF13D2D8DD005898FE /* LFViewController.h */,
+				DE0B7DF013D2D8DD005898FE /* LFViewController.m */,
+				DE0B7DF113D2D8DD005898FE /* LFTableViewController.h */,
+				DE0B7DF213D2D8DD005898FE /* LFTableViewController.m */,
+			);
+			name = NavigationControllers;
 			sourceTree = "<group>";
 		};
 		EC39292E13D28878003D1DD0 /* Library */ = {
@@ -442,10 +487,10 @@
 				EC39294013D2888F003D1DD0 /* DetailViewController.xib in Resources */,
 				EC39294513D2889F003D1DD0 /* RewardViewController.xib in Resources */,
 				DE0B7DC113D2B111005898FE /* TabBarController.xib in Resources */,
-				DE0B7DDE13D2D647005898FE /* What.xib in Resources */,
-				DE0B7DE013D2D65A005898FE /* Where.xib in Resources */,
-				DE0B7DE213D2D72F005898FE /* WhereMap.xib in Resources */,
-				DE0B7DE413D2D79F005898FE /* Description.xib in Resources */,
+				DE0B7DDE13D2D647005898FE /* WhatTableCell.xib in Resources */,
+				DE0B7DE013D2D65A005898FE /* WhereTableCell.xib in Resources */,
+				DE0B7DE213D2D72F005898FE /* WhereMapTableCell.xib in Resources */,
+				DE0B7DE413D2D79F005898FE /* DescriptionTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +527,13 @@
 				EC39291213D284EE003D1DD0 /* MessageManager.m in Sources */,
 				EC39293F13D2888F003D1DD0 /* DetailViewController.m in Sources */,
 				EC39294413D2889F003D1DD0 /* RewardViewController.m in Sources */,
+				DE0B7DED13D2D86A005898FE /* CustomCellBackgroundView.m in Sources */,
+				DE0B7DF313D2D8DD005898FE /* LFViewController.m in Sources */,
+				DE0B7DF413D2D8DD005898FE /* LFTableViewController.m in Sources */,
+				DE0B7DF813D2E93F005898FE /* WhatTableCell.m in Sources */,
+				DE0B7DFB13D2E95A005898FE /* WhereTableCell.m in Sources */,
+				DE0B7DFE13D2E978005898FE /* DescriptionTableCell.m in Sources */,
+				DE0B7E0113D2EA1C005898FE /* WhereMapTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
