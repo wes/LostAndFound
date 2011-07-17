@@ -114,6 +114,9 @@
 		7D98B7D413D2455B006B39A5 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D98B7D113D2455B006B39A5 /* SearchViewController.xib */; };
 		7D98B7D513D2455B006B39A5 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */; };
 		7DA737F413D183EE00E21268 /* ReportObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA737F313D183EE00E21268 /* ReportObj.m */; };
+		DE239FC213D358EA00936FE6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC113D358EA00936FE6 /* Security.framework */; };
+		DE239FC513D358F500936FE6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC413D358F500936FE6 /* libz.dylib */; };
+		DE239FC713D3590400936FE6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC613D3590400936FE6 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -276,6 +279,9 @@
 		7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		7DA737F213D183EE00E21268 /* ReportObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportObj.h; sourceTree = "<group>"; };
 		7DA737F313D183EE00E21268 /* ReportObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportObj.m; sourceTree = "<group>"; };
+		DE239FC113D358EA00936FE6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DE239FC413D358F500936FE6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DE239FC613D3590400936FE6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +289,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE239FC713D3590400936FE6 /* libxml2.dylib in Frameworks */,
+				DE239FC513D358F500936FE6 /* libz.dylib in Frameworks */,
+				DE239FC213D358EA00936FE6 /* Security.framework in Frameworks */,
 				7D7A7F3B13D008B90008CF06 /* CoreLocation.framework in Frameworks */,
 				7D7A7F3913CF02900008CF06 /* MapKit.framework in Frameworks */,
 				7D7A7F2813CACDFA0008CF06 /* MessageUI.framework in Frameworks */,
@@ -356,6 +365,9 @@
 		7D7A7C3F13AF22100008CF06 = {
 			isa = PBXGroup;
 			children = (
+				DE239FC613D3590400936FE6 /* libxml2.dylib */,
+				DE239FC413D358F500936FE6 /* libz.dylib */,
+				DE239FC113D358EA00936FE6 /* Security.framework */,
 				7D7A7C5413AF22120008CF06 /* MindIt */,
 				7D7A7C4D13AF22120008CF06 /* Frameworks */,
 				7D7A7C4B13AF22120008CF06 /* Products */,
