@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400B770113D388240046AE3A /* settingsFake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B770013D388240046AE3A /* settingsFake@2x.png */; };
+		400B770713D3883A0046AE3A /* keys.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B770313D3883A0046AE3A /* keys.png */; };
+		400B770813D3883A0046AE3A /* keys@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B770413D3883A0046AE3A /* keys@2x.png */; };
+		400B770913D3883A0046AE3A /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B770513D3883A0046AE3A /* wallet.png */; };
+		400B770A13D3883A0046AE3A /* wallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 400B770613D3883A0046AE3A /* wallet@2x.png */; };
 		7D55A27E13D352270040A214 /* found.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26E13D352270040A214 /* found.png */; };
 		7D55A27F13D352270040A214 /* foundBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26F13D352270040A214 /* foundBtn.png */; };
 		7D55A28013D352270040A214 /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27013D352270040A214 /* foundBtnFound.png */; };
@@ -125,6 +130,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		400B770013D388240046AE3A /* settingsFake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsFake@2x.png"; sourceTree = "<group>"; };
+		400B770313D3883A0046AE3A /* keys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = keys.png; path = Images/keys.png; sourceTree = "<group>"; };
+		400B770413D3883A0046AE3A /* keys@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "keys@2x.png"; path = "Images/keys@2x.png"; sourceTree = "<group>"; };
+		400B770513D3883A0046AE3A /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = Images/wallet.png; sourceTree = "<group>"; };
+		400B770613D3883A0046AE3A /* wallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wallet@2x.png"; path = "Images/wallet@2x.png"; sourceTree = "<group>"; };
 		7D55A26E13D352270040A214 /* found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = found.png; path = Images/found.png; sourceTree = "<group>"; };
 		7D55A26F13D352270040A214 /* foundBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtn.png; path = Images/foundBtn.png; sourceTree = "<group>"; };
 		7D55A27013D352270040A214 /* foundBtnFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnFound.png; path = Images/foundBtnFound.png; sourceTree = "<group>"; };
@@ -542,6 +552,11 @@
 		7D7A7CAC13B047490008CF06 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				400B770313D3883A0046AE3A /* keys.png */,
+				400B770413D3883A0046AE3A /* keys@2x.png */,
+				400B770513D3883A0046AE3A /* wallet.png */,
+				400B770613D3883A0046AE3A /* wallet@2x.png */,
+				400B770013D388240046AE3A /* settingsFake@2x.png */,
 				DE991AB213D376F400ABBC11 /* mapoverlay.png */,
 				DE991A9B13D3760800ABBC11 /* paperbottom.png */,
 				DE991A9C13D3760800ABBC11 /* paperbottom@2x.png */,
@@ -727,6 +742,11 @@
 				DE991AA213D3760800ABBC11 /* phone@2x.png in Resources */,
 				DE991AB313D376F400ABBC11 /* mapoverlay.png in Resources */,
 				DE991AB913D3788600ABBC11 /* MessageComposeViewController.xib in Resources */,
+				400B770113D388240046AE3A /* settingsFake@2x.png in Resources */,
+				400B770713D3883A0046AE3A /* keys.png in Resources */,
+				400B770813D3883A0046AE3A /* keys@2x.png in Resources */,
+				400B770913D3883A0046AE3A /* wallet.png in Resources */,
+				400B770A13D3883A0046AE3A /* wallet@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

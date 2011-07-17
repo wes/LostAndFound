@@ -240,13 +240,22 @@
 	NSString *catName;
 	
 	if([catIdString compare:@"0"]){
-		catName=@"KEYS";	
+		catName=@"PHONE";
+        
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.image = [UIImage imageNamed:@"phone.png"];
 	}
 	else if([catIdString compare:@"1"]){
-		catName=@"PHONE";
+		catName=@"KEYS";	
+        
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.image = [UIImage imageNamed:@"keys.png"];
 	}
 	else if([catIdString compare:@"2"]){
 		catName=@"WALLET";
+        
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        cell.image = [UIImage imageNamed:@"wallet.png"];
 	}
 	
 	titleLabel.text = [NSString stringWithFormat:@"%@", catName];//start_date,description
@@ -259,9 +268,6 @@
 	float stringFloat = [[recordArr objectForKey:@"distance"] floatValue];
 	
 	mileLabel.text = [NSString stringWithFormat:@"%3.1f mi",stringFloat];
-    
-    cell.contentView.backgroundColor = [UIColor whiteColor];
-    cell.image = [UIImage imageNamed:@"phone.png"];
 	
 	return cell;
 }
