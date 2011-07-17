@@ -113,6 +113,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
+//    lastOptions = [[NSMutableArray alloc] initWithArray: @"Wallet / Purse",@"Computer",@"Pet",@"Keys", nil ];
+    
     lostOptions = [[NSMutableArray alloc] init];
 	[lostOptions addObject:@"Wallet"];
 	[lostOptions addObject:@"Keys"];
