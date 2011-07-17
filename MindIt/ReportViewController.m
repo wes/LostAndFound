@@ -190,8 +190,11 @@
 //    UITableViewCell *mapView = [self.tableCells objectAtIndex: 2];
     UITableViewCell *subTitleView = [self.tableCells objectAtIndex: 3];
     
-    //found
+    // found
     report.title = [titleView getText];
+    
+    NSLog(@"TITLE %@",[titleView getText]);
+    
     report.subtitle = [subTitleView getText];
     report.lat = [[self.tableCells objectAtIndex:2] centerLat];
     report.lng = [[self.tableCells objectAtIndex:2] centerLng];

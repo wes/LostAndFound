@@ -120,6 +120,8 @@
 		DE991AA113D3760800ABBC11 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991A9D13D3760800ABBC11 /* phone.png */; };
 		DE991AA213D3760800ABBC11 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991A9E13D3760800ABBC11 /* phone@2x.png */; };
 		DE991AB313D376F400ABBC11 /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991AB213D376F400ABBC11 /* mapoverlay.png */; };
+		DE991AB813D3788600ABBC11 /* MessageComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE991AB613D3788600ABBC11 /* MessageComposeViewController.m */; };
+		DE991AB913D3788600ABBC11 /* MessageComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE991AB713D3788600ABBC11 /* MessageComposeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -292,6 +294,9 @@
 		DE991A9D13D3760800ABBC11 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Images/phone.png; sourceTree = "<group>"; };
 		DE991A9E13D3760800ABBC11 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone@2x.png"; path = "Images/phone@2x.png"; sourceTree = "<group>"; };
 		DE991AB213D376F400ABBC11 /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapoverlay.png; path = Images/mapoverlay.png; sourceTree = "<group>"; };
+		DE991AB513D3788600ABBC11 /* MessageComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageComposeViewController.h; sourceTree = "<group>"; };
+		DE991AB613D3788600ABBC11 /* MessageComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageComposeViewController.m; sourceTree = "<group>"; };
+		DE991AB713D3788600ABBC11 /* MessageComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageComposeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +455,9 @@
 		7D7A7C7513AF2A500008CF06 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DE991AB513D3788600ABBC11 /* MessageComposeViewController.h */,
+				DE991AB613D3788600ABBC11 /* MessageComposeViewController.m */,
+				DE991AB713D3788600ABBC11 /* MessageComposeViewController.xib */,
 				7D55A2F113D3545F0040A214 /* RewardViewController.h */,
 				7D55A2F213D3545F0040A214 /* RewardViewController.m */,
 				7D55A2DF13D354270040A214 /* DetailViewController.h */,
@@ -718,6 +726,7 @@
 				DE991AA113D3760800ABBC11 /* phone.png in Resources */,
 				DE991AA213D3760800ABBC11 /* phone@2x.png in Resources */,
 				DE991AB313D376F400ABBC11 /* mapoverlay.png in Resources */,
+				DE991AB913D3788600ABBC11 /* MessageComposeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,6 +772,7 @@
 				7D55A30413D354E10040A214 /* WhatTableCell.m in Sources */,
 				7D55A30513D354E10040A214 /* WhereMapTableCell.m in Sources */,
 				7D55A30613D354E10040A214 /* WhereTableCell.m in Sources */,
+				DE991AB813D3788600ABBC11 /* MessageComposeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
