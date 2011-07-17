@@ -34,6 +34,7 @@
 @property (nonatomic, retain) IBOutlet ReportObj *report;
 @property (nonatomic, retain) IBOutlet UITextField *text;
 
+
 - (IBAction)toggleLostFoundAction:(id)sender;
 
 - (void) setEditingButtons;

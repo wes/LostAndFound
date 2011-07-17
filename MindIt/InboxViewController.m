@@ -130,7 +130,11 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    MessageObj *msg = [MessageObj reportWithDictionaryRepresentation:(NSDictionary *)[aDict objectAtIndex:[indexPath row]]];
+   // MessageObj *msg = [MessageObj reportWithDictionaryRepresentation:(NSDictionary *)[aDict objectAtIndex:[indexPath row]]];
+    
+    MessageObj *msg = [MessageObj reportWithDictionaryRepresentation:(NSDictionary *)[appDelegate.arr_Messages objectAtIndex:indexPath.row]];
+    
+    
     MessageDetailViewController* detailView = [[MessageDetailViewController alloc] initWithReport:msg];
 	[[self tabBarNavigationController] pushViewController:detailView animated:YES];
 }

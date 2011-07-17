@@ -17,7 +17,8 @@
 @synthesize text;
 
 + (MessageObj *)reportWithDictionaryRepresentation:(NSDictionary *)dictionary {
-    return [[[self alloc] initWithDictionaryRepresentation:dictionary] autorelease];
+   // return [[[self alloc] initWithDictionaryRepresentation:dictionary] autorelease];
+    return [[self alloc]init];
 }
 
 @end

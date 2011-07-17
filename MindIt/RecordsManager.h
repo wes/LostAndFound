@@ -29,7 +29,7 @@
 -(BOOL)addReport:(ReportObj *)reportToAdd;
 -(BOOL)selectRecords:(ReportObj *)reportsToQuery;
 -(BOOL)selectA_RecordById:(NSString *)str_RecordID;
-
+-(BOOL)addReportFull:(NSString *)what :(NSString *)text :(float )lat :(float)lng :(BOOL)isFound;
 @end
 
 

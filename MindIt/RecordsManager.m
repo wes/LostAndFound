@@ -66,6 +66,23 @@
     connRec = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     return YES;
 }
+-(BOOL)addReportFull:(NSString *)what :(NSString *)text :(float )lat :(float)lng :(BOOL)isFound{
+	
+	returnValue = NO;
+    NSString *url = [NSString stringWithFormat:@""];
+    UIDevice *myDevice = [UIDevice currentDevice];
+    NSString *deviceUDID = [myDevice uniqueIdentifier];
+    
+    if(isFound)
+    url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=%@&lat=37.22626&lng=-121.55275&text=lost%20my%20car%20keys%20please%20reply%20back%20please%20please", deviceUDID];
+    else
+        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=lost&user=%@&cat=%@&lat=37.22626&lng=-121.55275&text=lost%20my%20car%20keys%20please%20reply%20back%20please%20please", deviceUDID];
+    responseData = [[NSMutableData data] retain];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    connRec = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    return YES;
+}
+
 
 
 

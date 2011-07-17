@@ -11,7 +11,7 @@
 #import "CustomCellBackgroundView.h"
 #import "SelectionListViewController.h"
 #import "LFTableViewController.h"
-
+#import "SearchViewController.h"
 #import "WhatTableCell.h"
 #import "WhereTableCell.h"
 #import "WhereMapTableCell.h"
@@ -185,12 +185,26 @@
 
 -(BOOL)saveRecord
 {
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Thanks! Your report has been added" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
+    return FALSE;
+    
+    /*
 
     UITableViewCell *titleView = [self.tableCells objectAtIndex: 0];
 //    UITableViewCell *mapView = [self.tableCells objectAtIndex: 2];
     UITableViewCell *subTitleView = [self.tableCells objectAtIndex: 3];
+    NSString *what = [NSString stringWithFormat:@"%@",[titleView getText]];
+    NSString *fulltext = [NSString stringWithFormat:@"%@",[subTitleView getText]];
+    float lat = 37.22626;
+    float lng = -121.55275;
     
-    // found
+
+    /*
+    //found
+
     report.title = [titleView getText];
     
     NSLog(@"TITLE %@",[titleView getText]);
@@ -206,10 +220,10 @@
     
     RecordsManager *rm = [[RecordsManager alloc] init];
     
-    BOOL success = [rm addReport:report];
+    BOOL success = [rm addReportFull:what :fulltext :lat :lng :isFound];
     [rm release];
-    
-    return success;
+    */
+    return YES;
     
 }
 
@@ -221,11 +235,6 @@
 }
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
