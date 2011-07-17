@@ -304,7 +304,7 @@
     CustomCellBackgroundView *bgView = [[CustomCellBackgroundView alloc] initWithFrame:CGRectZero];
     
     bgView.fillColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
-    bgView.borderColor = [UIColor colorWithWhite:1.0f alpha:0.62f];
+    bgView.borderColor = [UIColor colorWithWhite:1.0f alpha:0.0f];
     bgView.position = CustomCellBackgroundViewPositionMiddle;
 //    bgView.frame = CGRectMake(0, 0, 300, 44);
 //    bgView.cli

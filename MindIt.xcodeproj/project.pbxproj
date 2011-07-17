@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40E47FB513D35A5F00E986EE /* paperbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FB313D35A5F00E986EE /* paperbottom.png */; };
-		40E47FB613D35A5F00E986EE /* paperbottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FB413D35A5F00E986EE /* paperbottom@2x.png */; };
-		40E47FC113D3645C00E986EE /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FBF13D3645C00E986EE /* phone.png */; };
-		40E47FC213D3645C00E986EE /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E47FC013D3645C00E986EE /* phone@2x.png */; };
 		7D55A27E13D352270040A214 /* found.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26E13D352270040A214 /* found.png */; };
 		7D55A27F13D352270040A214 /* foundBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26F13D352270040A214 /* foundBtn.png */; };
 		7D55A28013D352270040A214 /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27013D352270040A214 /* foundBtnFound.png */; };
@@ -119,18 +115,14 @@
 		DE239FC213D358EA00936FE6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC113D358EA00936FE6 /* Security.framework */; };
 		DE239FC513D358F500936FE6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC413D358F500936FE6 /* libz.dylib */; };
 		DE239FC713D3590400936FE6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC613D3590400936FE6 /* libxml2.dylib */; };
-		DE239FD313D3676A00936FE6 /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FCF13D3676A00936FE6 /* foundBtnFound.png */; };
-		DE239FD413D3676A00936FE6 /* foundBtnFound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD013D3676A00936FE6 /* foundBtnFound@2x.png */; };
-		DE239FD513D3676A00936FE6 /* foundBtnLost.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD113D3676A00936FE6 /* foundBtnLost.png */; };
-		DE239FD613D3676A00936FE6 /* foundBtnLost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD213D3676A00936FE6 /* foundBtnLost@2x.png */; };
-		DE239FD813D36D6B00936FE6 /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD713D36D6B00936FE6 /* mapoverlay.png */; };
+		DE991A9F13D3760800ABBC11 /* paperbottom.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991A9B13D3760800ABBC11 /* paperbottom.png */; };
+		DE991AA013D3760800ABBC11 /* paperbottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991A9C13D3760800ABBC11 /* paperbottom@2x.png */; };
+		DE991AA113D3760800ABBC11 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991A9D13D3760800ABBC11 /* phone.png */; };
+		DE991AA213D3760800ABBC11 /* phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991A9E13D3760800ABBC11 /* phone@2x.png */; };
+		DE991AB313D376F400ABBC11 /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DE991AB213D376F400ABBC11 /* mapoverlay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		40E47FB313D35A5F00E986EE /* paperbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paperbottom.png; path = ../../../iPhone_apps/LostAndFound/MindIt/Images/paperbottom.png; sourceTree = "<group>"; };
-		40E47FB413D35A5F00E986EE /* paperbottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "paperbottom@2x.png"; path = "../../../iPhone_apps/LostAndFound/MindIt/Images/paperbottom@2x.png"; sourceTree = "<group>"; };
-		40E47FBF13D3645C00E986EE /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = ../../../iPhone_apps/LostAndFound/MindIt/Images/phone.png; sourceTree = "<group>"; };
-		40E47FC013D3645C00E986EE /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone@2x.png"; path = "../../../iPhone_apps/LostAndFound/MindIt/Images/phone@2x.png"; sourceTree = "<group>"; };
 		7D55A26E13D352270040A214 /* found.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = found.png; path = Images/found.png; sourceTree = "<group>"; };
 		7D55A26F13D352270040A214 /* foundBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtn.png; path = Images/foundBtn.png; sourceTree = "<group>"; };
 		7D55A27013D352270040A214 /* foundBtnFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnFound.png; path = Images/foundBtnFound.png; sourceTree = "<group>"; };
@@ -295,7 +287,11 @@
 		DE239FD013D3676A00936FE6 /* foundBtnFound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "foundBtnFound@2x.png"; path = "Images/foundBtnFound@2x.png"; sourceTree = "<group>"; };
 		DE239FD113D3676A00936FE6 /* foundBtnLost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnLost.png; path = Images/foundBtnLost.png; sourceTree = "<group>"; };
 		DE239FD213D3676A00936FE6 /* foundBtnLost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "foundBtnLost@2x.png"; path = "Images/foundBtnLost@2x.png"; sourceTree = "<group>"; };
-		DE239FD713D36D6B00936FE6 /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapoverlay.png; path = Images/mapoverlay.png; sourceTree = "<group>"; };
+		DE991A9B13D3760800ABBC11 /* paperbottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = paperbottom.png; path = Images/paperbottom.png; sourceTree = "<group>"; };
+		DE991A9C13D3760800ABBC11 /* paperbottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "paperbottom@2x.png"; path = "Images/paperbottom@2x.png"; sourceTree = "<group>"; };
+		DE991A9D13D3760800ABBC11 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = phone.png; path = Images/phone.png; sourceTree = "<group>"; };
+		DE991A9E13D3760800ABBC11 /* phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone@2x.png"; path = "Images/phone@2x.png"; sourceTree = "<group>"; };
+		DE991AB213D376F400ABBC11 /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapoverlay.png; path = Images/mapoverlay.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -538,10 +534,11 @@
 		7D7A7CAC13B047490008CF06 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				40E47FBF13D3645C00E986EE /* phone.png */,
-				40E47FC013D3645C00E986EE /* phone@2x.png */,
-				40E47FB313D35A5F00E986EE /* paperbottom.png */,
-				40E47FB413D35A5F00E986EE /* paperbottom@2x.png */,
+				DE991AB213D376F400ABBC11 /* mapoverlay.png */,
+				DE991A9B13D3760800ABBC11 /* paperbottom.png */,
+				DE991A9C13D3760800ABBC11 /* paperbottom@2x.png */,
+				DE991A9D13D3760800ABBC11 /* phone.png */,
+				DE991A9E13D3760800ABBC11 /* phone@2x.png */,
 				7D55A28E13D352840040A214 /* Default.png */,
 				7D55A28F13D352840040A214 /* Default@2x.png */,
 				7D55A29013D352840040A214 /* flagbutton.png */,
@@ -716,11 +713,11 @@
 				7D55A2D913D352D10040A214 /* WhatTableCell.xib in Resources */,
 				7D55A2DA13D352D10040A214 /* WhereMapTableCell.xib in Resources */,
 				7D55A2DB13D352D10040A214 /* WhereTableCell.xib in Resources */,
-				40E47FB513D35A5F00E986EE /* paperbottom.png in Resources */,
-				40E47FB613D35A5F00E986EE /* paperbottom@2x.png in Resources */,
-				40E47FC113D3645C00E986EE /* phone.png in Resources */,
-				40E47FC213D3645C00E986EE /* phone@2x.png in Resources */,
-				DE239FD813D36D6B00936FE6 /* mapoverlay.png in Resources */,
+				DE991A9F13D3760800ABBC11 /* paperbottom.png in Resources */,
+				DE991AA013D3760800ABBC11 /* paperbottom@2x.png in Resources */,
+				DE991AA113D3760800ABBC11 /* phone.png in Resources */,
+				DE991AA213D3760800ABBC11 /* phone@2x.png in Resources */,
+				DE991AB313D376F400ABBC11 /* mapoverlay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
