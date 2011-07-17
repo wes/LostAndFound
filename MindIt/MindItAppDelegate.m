@@ -34,7 +34,10 @@
     [recManager release];
      */
     [[NSBundle mainBundle] loadNibNamed:@"TabBarController" owner:self options:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.tabBarController];
+    
+    // [self.tabViewController.selectedViewController viewWillAppear:YES];
+    
+     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.tabBarController];
     self.window.rootViewController = self.navigationController;
 	//[self.tabBarController  navigationController
     [self.window makeKeyAndVisible];

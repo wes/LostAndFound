@@ -18,14 +18,19 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = @"Report";
     }
     return self;
 }
-- (void)viewWillAppear:(BOOL)animated {
-    
-    self.title = @"Report";
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.tabBarController.navigationController setNavigationBarHidden:YES animated:YES];
+    // or self.navigationItem.title = MyNewTitle;
 //    [self.navigationItem.rightBarButtonItem setText:@"Save"];
 
     mapOverlay.image = [UIImage imageNamed:@"mapoverlay.png"];
