@@ -15,7 +15,6 @@
 		7D55A27F13D352270040A214 /* foundBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A26F13D352270040A214 /* foundBtn.png */; };
 		7D55A28013D352270040A214 /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27013D352270040A214 /* foundBtnFound.png */; };
 		7D55A28113D352270040A214 /* foundBtnLost.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27113D352270040A214 /* foundBtnLost.png */; };
-		7D55A28213D352270040A214 /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27213D352270040A214 /* mapoverlay.png */; };
 		7D55A28313D352270040A214 /* stripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27313D352270040A214 /* stripe.png */; };
 		7D55A28413D352270040A214 /* messages.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27513D352270040A214 /* messages.png */; };
 		7D55A28513D352270040A214 /* messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A27613D352270040A214 /* messages@2x.png */; };
@@ -39,7 +38,6 @@
 		7D55A2B613D352840040A214 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29813D352840040A214 /* Icon.png */; };
 		7D55A2B713D352840040A214 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29913D352840040A214 /* Icon@2x.png */; };
 		7D55A2B813D352840040A214 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29A13D352840040A214 /* line.png */; };
-		7D55A2B913D352840040A214 /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29B13D352840040A214 /* mapoverlay.png */; };
 		7D55A2BA13D352840040A214 /* messageBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29C13D352840040A214 /* messageBG.png */; };
 		7D55A2BB13D352840040A214 /* messages.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29D13D352840040A214 /* messages.png */; };
 		7D55A2BC13D352840040A214 /* messages@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D55A29E13D352840040A214 /* messages@2x.png */; };
@@ -121,6 +119,11 @@
 		DE239FC213D358EA00936FE6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC113D358EA00936FE6 /* Security.framework */; };
 		DE239FC513D358F500936FE6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC413D358F500936FE6 /* libz.dylib */; };
 		DE239FC713D3590400936FE6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE239FC613D3590400936FE6 /* libxml2.dylib */; };
+		DE239FD313D3676A00936FE6 /* foundBtnFound.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FCF13D3676A00936FE6 /* foundBtnFound.png */; };
+		DE239FD413D3676A00936FE6 /* foundBtnFound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD013D3676A00936FE6 /* foundBtnFound@2x.png */; };
+		DE239FD513D3676A00936FE6 /* foundBtnLost.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD113D3676A00936FE6 /* foundBtnLost.png */; };
+		DE239FD613D3676A00936FE6 /* foundBtnLost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD213D3676A00936FE6 /* foundBtnLost@2x.png */; };
+		DE239FD813D36D6B00936FE6 /* mapoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DE239FD713D36D6B00936FE6 /* mapoverlay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,7 +135,6 @@
 		7D55A26F13D352270040A214 /* foundBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtn.png; path = Images/foundBtn.png; sourceTree = "<group>"; };
 		7D55A27013D352270040A214 /* foundBtnFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnFound.png; path = Images/foundBtnFound.png; sourceTree = "<group>"; };
 		7D55A27113D352270040A214 /* foundBtnLost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnLost.png; path = Images/foundBtnLost.png; sourceTree = "<group>"; };
-		7D55A27213D352270040A214 /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapoverlay.png; path = Images/mapoverlay.png; sourceTree = "<group>"; };
 		7D55A27313D352270040A214 /* stripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stripe.png; path = Images/stripe.png; sourceTree = "<group>"; };
 		7D55A27513D352270040A214 /* messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messages.png; sourceTree = "<group>"; };
 		7D55A27613D352270040A214 /* messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messages@2x.png"; sourceTree = "<group>"; };
@@ -156,7 +158,6 @@
 		7D55A29813D352840040A214 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7D55A29913D352840040A214 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		7D55A29A13D352840040A214 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		7D55A29B13D352840040A214 /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapoverlay.png; sourceTree = "<group>"; };
 		7D55A29C13D352840040A214 /* messageBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageBG.png; sourceTree = "<group>"; };
 		7D55A29D13D352840040A214 /* messages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = messages.png; path = tabBar/messages.png; sourceTree = "<group>"; };
 		7D55A29E13D352840040A214 /* messages@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "messages@2x.png"; path = "tabBar/messages@2x.png"; sourceTree = "<group>"; };
@@ -290,6 +291,11 @@
 		DE239FC113D358EA00936FE6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DE239FC413D358F500936FE6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DE239FC613D3590400936FE6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		DE239FCF13D3676A00936FE6 /* foundBtnFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnFound.png; path = Images/foundBtnFound.png; sourceTree = "<group>"; };
+		DE239FD013D3676A00936FE6 /* foundBtnFound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "foundBtnFound@2x.png"; path = "Images/foundBtnFound@2x.png"; sourceTree = "<group>"; };
+		DE239FD113D3676A00936FE6 /* foundBtnLost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foundBtnLost.png; path = Images/foundBtnLost.png; sourceTree = "<group>"; };
+		DE239FD213D3676A00936FE6 /* foundBtnLost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "foundBtnLost@2x.png"; path = "Images/foundBtnLost@2x.png"; sourceTree = "<group>"; };
+		DE239FD713D36D6B00936FE6 /* mapoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapoverlay.png; path = Images/mapoverlay.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,7 +555,6 @@
 				7D55A29813D352840040A214 /* Icon.png */,
 				7D55A29913D352840040A214 /* Icon@2x.png */,
 				7D55A29A13D352840040A214 /* line.png */,
-				7D55A29B13D352840040A214 /* mapoverlay.png */,
 				7D55A29C13D352840040A214 /* messageBG.png */,
 				7D55A29D13D352840040A214 /* messages.png */,
 				7D55A29E13D352840040A214 /* messages@2x.png */,
@@ -570,7 +575,10 @@
 				7D55A26F13D352270040A214 /* foundBtn.png */,
 				7D55A27013D352270040A214 /* foundBtnFound.png */,
 				7D55A27113D352270040A214 /* foundBtnLost.png */,
-				7D55A27213D352270040A214 /* mapoverlay.png */,
+				DE239FCF13D3676A00936FE6 /* foundBtnFound.png */,
+				DE239FD013D3676A00936FE6 /* foundBtnFound@2x.png */,
+				DE239FD113D3676A00936FE6 /* foundBtnLost.png */,
+				DE239FD213D3676A00936FE6 /* foundBtnLost@2x.png */,
 				7D55A27313D352270040A214 /* stripe.png */,
 				7D55A27413D352270040A214 /* tabBar */,
 				7D7A7F3C13D015410008CF06 /* one.png */,
@@ -660,7 +668,6 @@
 				7D55A27F13D352270040A214 /* foundBtn.png in Resources */,
 				7D55A28013D352270040A214 /* foundBtnFound.png in Resources */,
 				7D55A28113D352270040A214 /* foundBtnLost.png in Resources */,
-				7D55A28213D352270040A214 /* mapoverlay.png in Resources */,
 				7D55A28313D352270040A214 /* stripe.png in Resources */,
 				7D55A28413D352270040A214 /* messages.png in Resources */,
 				7D55A28513D352270040A214 /* messages@2x.png in Resources */,
@@ -684,7 +691,6 @@
 				7D55A2B613D352840040A214 /* Icon.png in Resources */,
 				7D55A2B713D352840040A214 /* Icon@2x.png in Resources */,
 				7D55A2B813D352840040A214 /* line.png in Resources */,
-				7D55A2B913D352840040A214 /* mapoverlay.png in Resources */,
 				7D55A2BA13D352840040A214 /* messageBG.png in Resources */,
 				7D55A2BB13D352840040A214 /* messages.png in Resources */,
 				7D55A2BC13D352840040A214 /* messages@2x.png in Resources */,
@@ -714,6 +720,7 @@
 				40E47FB613D35A5F00E986EE /* paperbottom@2x.png in Resources */,
 				40E47FC113D3645C00E986EE /* phone.png in Resources */,
 				40E47FC213D3645C00E986EE /* phone@2x.png in Resources */,
+				DE239FD813D36D6B00936FE6 /* mapoverlay.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wes Edling (EPR4S4VU57)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -798,6 +806,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "55AC16DE-AD8F-4035-B3F3-22E338563ABB";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv6 armv7 i386";
 			};
@@ -807,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wes Edling (EPR4S4VU57)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -815,6 +825,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "55AC16DE-AD8F-4035-B3F3-22E338563ABB";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv6 armv7 i386";
 			};

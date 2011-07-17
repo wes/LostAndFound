@@ -135,7 +135,7 @@
 							<object class="IBUILabel" id="497403748">
 								<reference key="NSNextResponder" ref="209610435"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{198, 11}, {92, 21}}</string>
+								<string key="NSFrame">{{190, 11}, {92, 21}}</string>
 								<reference key="NSSuperview" ref="209610435"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -279,7 +279,7 @@
 							<object class="IBMKMapView" id="530762946">
 								<reference key="NSNextResponder" ref="45743505"/>
 								<int key="NSvFlags">268</int>
-								<string key="NSFrame">{{5, 5}, {290, 167}}</string>
+								<string key="NSFrame">{{5, 5}, {290, 155}}</string>
 								<reference key="NSSuperview" ref="45743505"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="232312588"/>
@@ -290,7 +290,7 @@
 							<object class="IBUIImageView" id="232312588">
 								<reference key="NSNextResponder" ref="45743505"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{5, 5}, {290, 167}}</string>
+								<string key="NSFrame">{{5, 5}, {290, 155}}</string>
 								<reference key="NSSuperview" ref="45743505"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -298,7 +298,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
 						</object>
-						<string key="NSFrameSize">{300, 177}</string>
+						<string key="NSFrameSize">{300, 165}</string>
 						<reference key="NSSuperview" ref="48539483"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="530762946"/>
@@ -310,7 +310,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 				</object>
-				<string key="NSFrameSize">{300, 177}</string>
+				<string key="NSFrameSize">{300, 165}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="45743505"/>
@@ -344,8 +344,9 @@
 								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIContentVerticalAlignment">0</int>
-								<string key="IBUIText">Item Description...</string>
+								<string key="IBUIText"/>
 								<int key="IBUIBorderStyle">3</int>
+								<string key="IBUIPlaceholder">More Info</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">3</int>
 									<bytes key="NSWhite">MAA</bytes>

@@ -66,31 +66,33 @@
     [locationManager startUpdatingLocation];
     
     [locationMap setMapType:MKMapTypeStandard];
+
+    [itemFound setText:@"Phone Found!"];
+    [itemDescription setText:@"I found this beautiful iphone with the coolest app ever on it. I can't use it because its locked.. Give me the code!"];
+    
+//    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
+//    region.span.longitudeDelta = 0.005;
+//    region.span.latitudeDelta = 0.005;
+//    [locationMap setRegion:region animated:YES]; 
+//    [locationMap setDelegate:self];
+//    [locationMap setShowsUserLocation:YES];
+//    locationMap.showsUserLocation = YES;   
     
     
-    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
-    region.span.longitudeDelta = 0.005;
-    region.span.latitudeDelta = 0.005;
-    [locationMap setRegion:region animated:YES]; 
-    [locationMap setDelegate:self];
-    [locationMap setShowsUserLocation:YES];
-    locationMap.showsUserLocation = YES;   
-    
-    
-    CLLocationCoordinate2D zoomLocation;
-    locationMap.showsUserLocation = YES;
-    zoomLocation.latitude =   39.281516;
-    zoomLocation.longitude =  -76.580806;
-    // 2
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
-    // 3
-    MKCoordinateRegion adjustedRegion = [locationMap regionThatFits:viewRegion];                
-    // 4
-    [locationMap setRegion:viewRegion animated:YES];
-    self.title = @"Details";
-    itemFound.text = [self GetItemFound];
-    itemDescription.text = [self GetItemDescription];
-    locationMap = [self GetLocationMap];
+//    CLLocationCoordinate2D zoomLocation;
+//    locationMap.showsUserLocation = YES;
+//    zoomLocation.latitude =   39.281516;
+//    zoomLocation.longitude =  -76.580806;
+//    // 2
+//    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+//    // 3
+//    MKCoordinateRegion adjustedRegion = [locationMap regionThatFits:viewRegion];                
+//    // 4
+//    [locationMap setRegion:viewRegion animated:YES];
+//    self.title = @"Details";
+//    itemFound.text = [self GetItemFound];
+//    itemDescription.text = [self GetItemDescription];
+//    locationMap = [self GetLocationMap];
     
     myItem = FALSE;
     

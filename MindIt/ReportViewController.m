@@ -53,6 +53,13 @@
     [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
     self.tabBarController.navigationItem.title = @"Report";
 
+//    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:nil];
+    
+//    [segmentedControl setImage:[UIImage imageNamed:@"foundBtnFound.png"] forSegmentAtIndex:0];
+//    [segmentedControl setImage:[UIImage imageNamed:@"foundBtnLost.png"] forSegmentAtIndex:1];
+//    [segmentedControl insertSegmentWithImage:[UIImage imageNamed:@"foundBtnLost.png"] atIndex:1 animated:YES];
+
+    
 //    UITableView *mapTableCellView = [self.tableCells objectAtIndex:2];
 //    [mapTableCellView  
     
@@ -94,7 +101,6 @@
 
 - (void)dealloc
 {
-
     [super dealloc];
 	[lostOptions release];
 }
@@ -259,7 +265,7 @@
             return 44 + margin;
         break;
         case 2: // map
-            return 177 + margin;
+            return 165 + margin;
         break;
         case 3: // desc
             return 70 + margin;
@@ -299,7 +305,7 @@
     
     bgView.fillColor = [UIColor colorWithWhite:1.0f alpha:0.9f];
     bgView.borderColor = [UIColor colorWithWhite:1.0f alpha:0.62f];
-    bgView.position = CustomCellBackgroundViewPositionSingle;
+    bgView.position = CustomCellBackgroundViewPositionMiddle;
 //    bgView.frame = CGRectMake(0, 0, 300, 44);
 //    bgView.cli
     
