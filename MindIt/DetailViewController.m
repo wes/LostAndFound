@@ -67,8 +67,8 @@
     
     [locationMap setMapType:MKMapTypeStandard];
 
-    [itemFound setText:@"Phone Found!"];
-    [itemDescription setText:@"I found this beautiful iphone with the coolest app ever on it. I can't use it because its locked.. Give me the code!"];
+    [itemFound setText:@"Keys Found!"];
+    [itemDescription setText:@"I found these keys in the parking lot on 3rd street on Monday."];
     
 //    MKCoordinateRegion region = { {0.0, 0.0 }, { 0.0, 0.0 } };
 //    region.span.longitudeDelta = 0.005;

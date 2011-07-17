@@ -239,6 +239,8 @@
 	NSString *catIdString = (NSString *)[recordArr objectForKey:@"categoryid"];
 	NSString *catName;
 	
+    NSLog(@"ASDFASDFA %@", catIdString);
+    
 	if([catIdString compare:@"0"]){
 		catName=@"PHONE";
         
@@ -276,6 +278,10 @@
 #pragma mark Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ReportObj *report = [ReportObj reportWithDictionaryRepresentation:(NSDictionary *)[aDict objectAtIndex:[indexPath row]]];
+    
+    NSLog(@"YO");
+    NSLog(@"%@", report);
+    
     detailView = [[DetailViewController alloc] initWithReport:report];
     [[self tableView] deselectRowAtIndexPath:indexPath animated:YES];
 	[[self tabBarNavigationController] pushViewController:detailView animated:YES];

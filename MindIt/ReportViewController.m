@@ -124,10 +124,10 @@
 //    lastOptions = [[NSMutableArray alloc] initWithArray: @"Wallet / Purse",@"Computer",@"Pet",@"Keys", nil ];
     
     lostOptions = [[NSMutableArray alloc] init];
-	[lostOptions addObject:@"Wallet"];
+	[lostOptions addObject:@"Phone"];
 	[lostOptions addObject:@"Keys"];
-	[lostOptions addObject:@"Car"];
-	[lostOptions addObject:@"Pet"];
+	[lostOptions addObject:@"Wallet"];
+//	[lostOptions addObject:@"Pet"];
 
 }
 
