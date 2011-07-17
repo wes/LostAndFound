@@ -37,7 +37,7 @@
 {
     self = [self initWithNibName:NSStringFromClass([self class]) bundle:nil];
     if (self) {
-        self.title = @"Report";
+        self.title = @"Lost & Found";
     }
     return self;
 }
@@ -51,7 +51,8 @@
     [super viewWillAppear:animated];
     [self getTableCells];
     [self.tabBarController.navigationController setNavigationBarHidden:NO animated:YES];
-    self.tabBarController.navigationItem.title = @"Report";
+//    self.tabBarController.navigationItem.title = @"Report";
+    self.tabBarController.navigationItem.title = @"Lost & Found";
 
 //    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:nil];
     
