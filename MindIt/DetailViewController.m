@@ -12,6 +12,7 @@
 #import "DetailViewController.h"
 #import "RewardViewController.h"
 #import "ReportObj.h"
+#import "MessageComposeViewController.h"
 
 @implementation DetailViewController
 @synthesize itemFound;
@@ -123,6 +124,8 @@
     self.lblThanks.hidden = NO;
     
 }
+
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -177,6 +180,10 @@
 {
     myItem = TRUE;
     NSLog(@"This is my item. I have claimed it");
+	
+	MessageComposeViewController *messageComposerView = [[MessageComposeViewController alloc] init];
+	[self.navigationController pushViewController:messageComposerView animated:YES];
+	[messageComposerView release];
 }
 
 -(IBAction)rewardPressed:(id)sender 
