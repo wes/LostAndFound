@@ -11,7 +11,9 @@
 #import <CoreLocation/CoreLocation.h>
 #import "RewardViewController.h"
 #import "Annotation.h"
+
 #define METERS_PER_MILE 1609.344
+
 @class ReportObj;
 
 @interface DetailViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate> {
