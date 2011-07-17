@@ -18,4 +18,6 @@
 //- (IBAction)textFieldGainedFocus:(id)sender;
 //- (IBAction)textFieldLostFocus:(id)sender;
 
+-(NSString *)getText;
+
 @end

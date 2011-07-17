@@ -182,26 +182,71 @@
 
 
 
+-(void)doSave{
 
+}
 
 -(BOOL)saveRecord
 {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+  
+    
+//    returnValue = NO;
+    NSString *url;
+    UIDevice *myDevice = [UIDevice currentDevice];
+    NSString *deviceUDID = [myDevice uniqueIdentifier];
+    
+    UITableViewCell *titleView = [self.tableCells objectAtIndex: 0];
+    UITableViewCell *subTitleView = [self.tableCells objectAtIndex: 3];
+    NSString *title = [NSString stringWithFormat:@"%@",[titleView getText]];
+    NSString *subtitle = [NSString stringWithFormat:@"%@",[subTitleView getText]];
+
+//    float lat = [[self.tableCells objectAtIndex:2] centerLat];
+//    float lng = [[self.tableCells objectAtIndex:2] centerLng];
+
+    //    float lat = 37.22626;
+//    float lng = -121.55275;
+//    
+//    NSLog(@"ASDF %@", reportToAdd);
+    
+    float lat = 34.67269185;
+    float lng = -79.00355048333333;
+    
+    if(isFound){
+        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=%@&lat=%f&lng=%f&text=%@", deviceUDID, title, lat, lng, subtitle];
+    }else{
+        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=lost&user=%@&cat=%@&lat=%f&lng=%f&text=%@", deviceUDID, title, lat, lng, subtitle];        
+    }
+    
+    //    if(reportToAdd.isFoundReport)
+    url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=found&user=%@&cat=%@&lat=%f&lng=%f&text=%@", deviceUDID, title, lat, lng, subtitle];
+
+    NSLog(@"URL: %@", url);
+    
+    responseData = [[NSMutableData data] retain];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    connRec = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Thanks! Your report has been added" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
     [alert release];
-    return FALSE;
-    
-    /*
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 
-    UITableViewCell *titleView = [self.tableCells objectAtIndex: 0];
-//    UITableViewCell *mapView = [self.tableCells objectAtIndex: 2];
-    UITableViewCell *subTitleView = [self.tableCells objectAtIndex: 3];
-    NSString *what = [NSString stringWithFormat:@"%@",[titleView getText]];
-    NSString *fulltext = [NSString stringWithFormat:@"%@",[subTitleView getText]];
-    float lat = 37.22626;
-    float lng = -121.55275;
+    return YES;
+
     
+//    [self performSelector:@selector(doSave) withObject:nil afterDelay:1.5];
+    
+//    return FALSE;
+    
+//    UITableViewCell *titleView = [self.tableCells objectAtIndex: 0];
+//    UITableViewCell *subTitleView = [self.tableCells objectAtIndex: 3];
+//    NSString *what = [NSString stringWithFormat:@"%@",[titleView getText]];
+//    NSString *fulltext = [NSString stringWithFormat:@"%@",[subTitleView getText]];
+//    float lat = 37.22626;
+//    float lng = -121.55275;
+//    
 
     /*
     //found
@@ -219,10 +264,6 @@
     
     NSLog(@"%@",report);
     
-    RecordsManager *rm = [[RecordsManager alloc] init];
-    
-    BOOL success = [rm addReportFull:what :fulltext :lat :lng :isFound];
-    [rm release];
     */
     return YES;
     

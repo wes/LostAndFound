@@ -42,7 +42,7 @@
 //
 
 -(NSString *)getText{
-    return descriptionTextLabel.text;
+    return [NSString stringWithFormat: @"%@", descriptionTextLabel.text];
 }
 
 

@@ -21,7 +21,13 @@
     ReportObj *report;
 	NSMutableArray *lostOptions;
     BOOL isFound;
+    NSURLConnection *connRec;
+    NSMutableData *responseData;
 }
+
+@property (nonatomic, retain) NSMutableData *responseData;
+@property (nonatomic, retain) NSURLConnection *connRec;
+
 @property (nonatomic, readwrite) BOOL isFound;
 
 @property (nonatomic, retain) IBOutlet WhatTableCell        *whatTableCell;
