@@ -22,4 +22,5 @@
 @property (nonatomic, copy) NSString *fromudid;
 @property (nonatomic, copy) NSString *recordid;
 @property (nonatomic, copy) NSString *text;
++ (MessageObj *)reportWithDictionaryRepresentation:(NSDictionary *)dictionary;
 @end

@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "MessageObj.h"
-
-@interface InboxViewController : UIViewController {
+#import "MindItAppDelegate.h"
+@interface InboxViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
+    MessageObj *msg;
+    NSArray *aDict;
 }
 
-- (IBAction)loadInbox;
-- (IBAction)loadSent:(id)sender;
-
+@property (nonatomic, retain) MindItAppDelegate *appDelegate;
+@property (nonatomic, retain) IBOutlet UITableView *tblMessages;
+@property (nonatomic, retain) MessageObj *msg;
+@property (retain,nonatomic) NSArray *aDict;
 @end

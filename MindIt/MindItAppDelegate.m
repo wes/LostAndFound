@@ -9,7 +9,7 @@
 #import "MindItAppDelegate.h"
 #import "RecordsManager.h"
 #import "PayPal.h"
-
+#import "MessageManager.h"
 @implementation MindItAppDelegate
 
   
@@ -27,6 +27,10 @@
     arr_Records=[[NSMutableArray alloc] init];
     
     arr_Messages=[[NSMutableArray alloc] init];
+    
+    MessageManager *mssgManager = [[MessageManager alloc]init];
+    [mssgManager selectMessages:@"inbox"];
+    [mssgManager release];
     
     /*
     RecordsManager *recManager = [[RecordsManager alloc]init];

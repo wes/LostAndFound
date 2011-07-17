@@ -16,4 +16,8 @@
 @synthesize recordid;
 @synthesize text;
 
++ (MessageObj *)reportWithDictionaryRepresentation:(NSDictionary *)dictionary {
+    return [[[self alloc] initWithDictionaryRepresentation:dictionary] autorelease];
+}
+
 @end

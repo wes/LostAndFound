@@ -54,10 +54,10 @@
 	cLocation.longitude = 150.000;
 	cLocation.latitude = 150.000;
 	
-	sBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,44,320,33)];
+	sBar = [[UISearchBar alloc]initWithFrame:CGRectMake(0,0,320,44)];
 	sBar.delegate = self;
 	[self.view addSubview:sBar];
-	tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 78, 320, 400)];
+	tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 44, 320, 400)];
 	tableView.delegate = self;
 	tableView.dataSource = self;
 	tableView.hidden=YES;

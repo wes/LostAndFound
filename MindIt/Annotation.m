@@ -9,14 +9,21 @@
 #import "Annotation.h"
 
 
-@implementation Annotation
-@synthesize coordinate,title,subtitle;
+@implementation AddressAnnotation
 
--(void)dealloc
-{
-    [title release];
-    [subtitle release];
-    [super dealloc];
+@synthesize coordinate;
+
+- (NSString *)subtitle{
+    return @"Sub Title";
 }
 
+- (NSString *)title{
+    return @"Title";
+}
+
+-(id)initWithCoordinate:(CLLocationCoordinate2D) c{
+    coordinate=c;
+    NSLog(@"%f,%f",c.latitude,c.longitude);
+    return self;
+}
 @end

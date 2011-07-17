@@ -36,13 +36,11 @@
 	
 	returnValue = NO;
     NSString *url;
-    UIDevice *myDevice = [UIDevice currentDevice];
-    NSString *deviceUDID = [myDevice uniqueIdentifier];
     if (messagesToQuery==@"inbox") {
-        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=inbox&user=", deviceUDID];
+        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=inbox&user=BCB6AFF6-31CE-5A53-91D7-FC008BB406D0"];
         
     } else {
-        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=sent&user=", deviceUDID];
+        url = [NSString stringWithFormat:@"http://petbookapp.com/services/lnf.php?m=sent&user=ACB6AFF6-31CE-5A53-91D7-FC008BB406D0"];
         
     }
         

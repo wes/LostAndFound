@@ -34,8 +34,8 @@
 	//and the wording of some messages to the user.
 	UIButton *button = [[PayPal getInstance] getPayButtonWithTarget:self andAction:action andButtonType:type];
 	CGRect frame = button.frame;
-	frame.origin.x =15;
-	frame.origin.y = 100;
+	frame.origin.x = 15;
+	frame.origin.y = 140;
 	button.frame = frame;
 	[self.view addSubview:button];
 	
@@ -70,6 +70,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"stripe.png"]]];
+    
     [self setTitle:@"Reward Finder"];
     self.payeeTextField.text = @"jvpaye_1310853970_biz@gmail.com";
     self.amountTextField.text = @"10.00";
