@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D7A7C4F13AF22120008CF06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7C4E13AF22120008CF06 /* UIKit.framework */; };
+		7D7A7C5113AF22120008CF06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7C5013AF22120008CF06 /* Foundation.framework */; };
+		7D7A7C5313AF22120008CF06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7C5213AF22120008CF06 /* CoreGraphics.framework */; };
+		7D7A7C5913AF22120008CF06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A7C5713AF22120008CF06 /* InfoPlist.strings */; };
+		7D7A7C5C13AF22120008CF06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7C5B13AF22120008CF06 /* main.m */; };
+		7D7A7C5F13AF22120008CF06 /* MindItAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7C5E13AF22120008CF06 /* MindItAppDelegate.m */; };
+		7D7A7C6213AF22120008CF06 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A7C6013AF22120008CF06 /* MainWindow.xib */; };
+		7D7A7E5713C6D2C90008CF06 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E4A13C6D2C90008CF06 /* Facebook.m */; };
+		7D7A7E5813C6D2C90008CF06 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A7E4C13C6D2C90008CF06 /* FBDialog.bundle */; };
+		7D7A7E5913C6D2C90008CF06 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E4E13C6D2C90008CF06 /* FBDialog.m */; };
+		7D7A7E5A13C6D2C90008CF06 /* FBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E5013C6D2C90008CF06 /* FBImageView.m */; };
+		7D7A7E5B13C6D2C90008CF06 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E5213C6D2C90008CF06 /* FBLoginDialog.m */; };
+		7D7A7E5C13C6D2C90008CF06 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E5413C6D2C90008CF06 /* FBRequest.m */; };
+		7D7A7E5D13C6D2C90008CF06 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E5613C6D2C90008CF06 /* NSString+HTML.m */; };
+		7D7A7E7D13C6D9E00008CF06 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E7013C6D9E00008CF06 /* SBJsonWriter.m */; };
+		7D7A7E7E13C6D9E00008CF06 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E7213C6D9E00008CF06 /* SBJsonParser.m */; };
+		7D7A7E7F13C6D9E00008CF06 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E7413C6D9E00008CF06 /* SBJsonBase.m */; };
+		7D7A7E8013C6D9E00008CF06 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E7613C6D9E00008CF06 /* SBJSON.m */; };
+		7D7A7E8113C6D9E00008CF06 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E7813C6D9E00008CF06 /* NSString+SBJSON.m */; };
+		7D7A7E8213C6D9E00008CF06 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7E7A13C6D9E00008CF06 /* NSObject+SBJSON.m */; };
+		7D7A7E8413C6DBD90008CF06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7E8313C6DBD70008CF06 /* QuartzCore.framework */; };
+		7D7A7F0113C9A40E0008CF06 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7F0013C9A40D0008CF06 /* libxml2.2.dylib */; };
+		7D7A7F2813CACDFA0008CF06 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7F2713CACDF90008CF06 /* MessageUI.framework */; };
+		7D7A7F3513CEEA030008CF06 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7F3313CEEA000008CF06 /* ReportViewController.m */; };
+		7D7A7F3613CEEA030008CF06 /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A7F3413CEEA020008CF06 /* ReportViewController.xib */; };
+		7D7A7F3913CF02900008CF06 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7F3813CF02900008CF06 /* MapKit.framework */; };
+		7D7A7F3B13D008B90008CF06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7A7F3A13D008B70008CF06 /* CoreLocation.framework */; };
+		7D7A7F3E13D015410008CF06 /* one.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A7F3C13D015410008CF06 /* one.png */; };
+		7D7A7F3F13D015410008CF06 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A7F3D13D015410008CF06 /* two.png */; };
+		7D7A7F4213D026190008CF06 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7F4113D026140008CF06 /* Annotation.m */; };
+		7D7A7F4513D027120008CF06 /* RecordsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A7F4413D027120008CF06 /* RecordsManager.m */; };
+		7D98B7CC13D244CB006B39A5 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D98B7C713D244CB006B39A5 /* InboxViewController.m */; };
+		7D98B7CD13D244CB006B39A5 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D98B7C913D244CB006B39A5 /* SearchViewController.m */; };
+		7D98B7CE13D244CB006B39A5 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D98B7CB13D244CB006B39A5 /* SettingsViewController.m */; };
+		7D98B7D313D2455B006B39A5 /* InboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D98B7D013D2455B006B39A5 /* InboxViewController.xib */; };
+		7D98B7D413D2455B006B39A5 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D98B7D113D2455B006B39A5 /* SearchViewController.xib */; };
+		7D98B7D513D2455B006B39A5 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */; };
+		7DA737F413D183EE00E21268 /* ReportObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA737F313D183EE00E21268 /* ReportObj.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D7A7C4A13AF22120008CF06 /* MindIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D7A7C4E13AF22120008CF06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7D7A7C5013AF22120008CF06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7D7A7C5213AF22120008CF06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7D7A7C5613AF22120008CF06 /* MindIt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MindIt-Info.plist"; sourceTree = "<group>"; };
+		7D7A7C5813AF22120008CF06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7D7A7C5A13AF22120008CF06 /* MindIt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MindIt-Prefix.pch"; sourceTree = "<group>"; };
+		7D7A7C5B13AF22120008CF06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D7A7C5D13AF22120008CF06 /* MindItAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MindItAppDelegate.h; sourceTree = "<group>"; };
+		7D7A7C5E13AF22120008CF06 /* MindItAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MindItAppDelegate.m; sourceTree = "<group>"; };
+		7D7A7C6113AF22120008CF06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7D7A7C8B13B03AA50008CF06 /* StringConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringConstant.h; sourceTree = "<group>"; };
+		7D7A7E4913C6D2C90008CF06 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		7D7A7E4A13C6D2C90008CF06 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		7D7A7E4B13C6D2C90008CF06 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		7D7A7E4C13C6D2C90008CF06 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		7D7A7E4D13C6D2C90008CF06 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		7D7A7E4E13C6D2C90008CF06 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		7D7A7E4F13C6D2C90008CF06 /* FBImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBImageView.h; sourceTree = "<group>"; };
+		7D7A7E5013C6D2C90008CF06 /* FBImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBImageView.m; sourceTree = "<group>"; };
+		7D7A7E5113C6D2C90008CF06 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		7D7A7E5213C6D2C90008CF06 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		7D7A7E5313C6D2C90008CF06 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		7D7A7E5413C6D2C90008CF06 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		7D7A7E5513C6D2C90008CF06 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		7D7A7E5613C6D2C90008CF06 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		7D7A7E7013C6D9E00008CF06 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		7D7A7E7113C6D9E00008CF06 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7D7A7E7213C6D9E00008CF06 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		7D7A7E7313C6D9E00008CF06 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7D7A7E7413C6D9E00008CF06 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		7D7A7E7513C6D9E00008CF06 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		7D7A7E7613C6D9E00008CF06 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		7D7A7E7713C6D9E00008CF06 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7D7A7E7813C6D9E00008CF06 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		7D7A7E7913C6D9E00008CF06 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7D7A7E7A13C6D9E00008CF06 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		7D7A7E7B13C6D9E00008CF06 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7D7A7E7C13C6D9E00008CF06 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7D7A7E8313C6DBD70008CF06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7D7A7F0013C9A40D0008CF06 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		7D7A7F2713CACDF90008CF06 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7D7A7F3213CEE9FF0008CF06 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		7D7A7F3313CEEA000008CF06 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
+		7D7A7F3413CEEA020008CF06 /* ReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
+		7D7A7F3813CF02900008CF06 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7D7A7F3A13D008B70008CF06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7D7A7F3C13D015410008CF06 /* one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = one.png; sourceTree = "<group>"; };
+		7D7A7F3D13D015410008CF06 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
+		7D7A7F4013D026110008CF06 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		7D7A7F4113D026140008CF06 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		7D7A7F4313D027120008CF06 /* RecordsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsManager.h; sourceTree = "<group>"; };
+		7D7A7F4413D027120008CF06 /* RecordsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsManager.m; sourceTree = "<group>"; };
+		7D98B7C613D244CB006B39A5 /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		7D98B7C713D244CB006B39A5 /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
+		7D98B7C813D244CB006B39A5 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		7D98B7C913D244CB006B39A5 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		7D98B7CA13D244CB006B39A5 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		7D98B7CB13D244CB006B39A5 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		7D98B7D013D2455B006B39A5 /* InboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InboxViewController.xib; sourceTree = "<group>"; };
+		7D98B7D113D2455B006B39A5 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		7DA737F213D183EE00E21268 /* ReportObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportObj.h; sourceTree = "<group>"; };
+		7DA737F313D183EE00E21268 /* ReportObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportObj.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D7A7C4713AF22120008CF06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7A7F3B13D008B90008CF06 /* CoreLocation.framework in Frameworks */,
+				7D7A7F3913CF02900008CF06 /* MapKit.framework in Frameworks */,
+				7D7A7F2813CACDFA0008CF06 /* MessageUI.framework in Frameworks */,
+				7D7A7F0113C9A40E0008CF06 /* libxml2.2.dylib in Frameworks */,
+				7D7A7E8413C6DBD90008CF06 /* QuartzCore.framework in Frameworks */,
+				7D7A7C4F13AF22120008CF06 /* UIKit.framework in Frameworks */,
+				7D7A7C5113AF22120008CF06 /* Foundation.framework in Frameworks */,
+				7D7A7C5313AF22120008CF06 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D7A7C3F13AF22100008CF06 = {
+			isa = PBXGroup;
+			children = (
+				7D7A7C5413AF22120008CF06 /* MindIt */,
+				7D7A7C4D13AF22120008CF06 /* Frameworks */,
+				7D7A7C4B13AF22120008CF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D7A7C4B13AF22120008CF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7C4A13AF22120008CF06 /* MindIt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D7A7C4D13AF22120008CF06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7F3A13D008B70008CF06 /* CoreLocation.framework */,
+				7D7A7F3813CF02900008CF06 /* MapKit.framework */,
+				7D7A7F2713CACDF90008CF06 /* MessageUI.framework */,
+				7D7A7F0013C9A40D0008CF06 /* libxml2.2.dylib */,
+				7D7A7E8313C6DBD70008CF06 /* QuartzCore.framework */,
+				7D7A7C4E13AF22120008CF06 /* UIKit.framework */,
+				7D7A7C5013AF22120008CF06 /* Foundation.framework */,
+				7D7A7C5213AF22120008CF06 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D7A7C5413AF22120008CF06 /* MindIt */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7E4813C6D2C80008CF06 /* Facebook SDK */,
+				7D7A7C8F13B045210008CF06 /* JSON */,
+				7D7A7C8A13B03A7B0008CF06 /* Business */,
+				7D7A7C7613AF2A6E0008CF06 /* Resources */,
+				7D7A7C7513AF2A500008CF06 /* ViewControllers */,
+				7D7A7C7413AF2A3D0008CF06 /* Manager */,
+				7D7A7C5D13AF22120008CF06 /* MindItAppDelegate.h */,
+				7D7A7C5E13AF22120008CF06 /* MindItAppDelegate.m */,
+				7D7A7C5513AF22120008CF06 /* Supporting Files */,
+			);
+			path = MindIt;
+			sourceTree = "<group>";
+		};
+		7D7A7C5513AF22120008CF06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7C5613AF22120008CF06 /* MindIt-Info.plist */,
+				7D7A7C5713AF22120008CF06 /* InfoPlist.strings */,
+				7D7A7C5A13AF22120008CF06 /* MindIt-Prefix.pch */,
+				7D7A7C5B13AF22120008CF06 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D7A7C7413AF2A3D0008CF06 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7F4313D027120008CF06 /* RecordsManager.h */,
+				7D7A7F4413D027120008CF06 /* RecordsManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		7D7A7C7513AF2A500008CF06 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D98B7C613D244CB006B39A5 /* InboxViewController.h */,
+				7D98B7C713D244CB006B39A5 /* InboxViewController.m */,
+				7D98B7C813D244CB006B39A5 /* SearchViewController.h */,
+				7D98B7C913D244CB006B39A5 /* SearchViewController.m */,
+				7D98B7CA13D244CB006B39A5 /* SettingsViewController.h */,
+				7D98B7CB13D244CB006B39A5 /* SettingsViewController.m */,
+				7D7A7F3213CEE9FF0008CF06 /* ReportViewController.h */,
+				7D7A7F3313CEEA000008CF06 /* ReportViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7D7A7C7613AF2A6E0008CF06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7CAC13B047490008CF06 /* Images */,
+				7D7A7F3413CEEA020008CF06 /* ReportViewController.xib */,
+				7D98B7D013D2455B006B39A5 /* InboxViewController.xib */,
+				7D98B7D113D2455B006B39A5 /* SearchViewController.xib */,
+				7D98B7D213D2455B006B39A5 /* SettingsViewController.xib */,
+				7D7A7C6013AF22120008CF06 /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7D7A7C8A13B03A7B0008CF06 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7C8B13B03AA50008CF06 /* StringConstant.h */,
+				7D7A7F4013D026110008CF06 /* Annotation.h */,
+				7D7A7F4113D026140008CF06 /* Annotation.m */,
+				7DA737F213D183EE00E21268 /* ReportObj.h */,
+				7DA737F313D183EE00E21268 /* ReportObj.m */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		7D7A7C8F13B045210008CF06 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7E7013C6D9E00008CF06 /* SBJsonWriter.m */,
+				7D7A7E7113C6D9E00008CF06 /* SBJsonWriter.h */,
+				7D7A7E7213C6D9E00008CF06 /* SBJsonParser.m */,
+				7D7A7E7313C6D9E00008CF06 /* SBJsonParser.h */,
+				7D7A7E7413C6D9E00008CF06 /* SBJsonBase.m */,
+				7D7A7E7513C6D9E00008CF06 /* SBJsonBase.h */,
+				7D7A7E7613C6D9E00008CF06 /* SBJSON.m */,
+				7D7A7E7713C6D9E00008CF06 /* SBJSON.h */,
+				7D7A7E7813C6D9E00008CF06 /* NSString+SBJSON.m */,
+				7D7A7E7913C6D9E00008CF06 /* NSString+SBJSON.h */,
+				7D7A7E7A13C6D9E00008CF06 /* NSObject+SBJSON.m */,
+				7D7A7E7B13C6D9E00008CF06 /* NSObject+SBJSON.h */,
+				7D7A7E7C13C6D9E00008CF06 /* JSON.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7D7A7CAC13B047490008CF06 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7F3C13D015410008CF06 /* one.png */,
+				7D7A7F3D13D015410008CF06 /* two.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7D7A7E4813C6D2C80008CF06 /* Facebook SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A7E4913C6D2C90008CF06 /* Facebook.h */,
+				7D7A7E4A13C6D2C90008CF06 /* Facebook.m */,
+				7D7A7E4B13C6D2C90008CF06 /* FBConnect.h */,
+				7D7A7E4C13C6D2C90008CF06 /* FBDialog.bundle */,
+				7D7A7E4D13C6D2C90008CF06 /* FBDialog.h */,
+				7D7A7E4E13C6D2C90008CF06 /* FBDialog.m */,
+				7D7A7E4F13C6D2C90008CF06 /* FBImageView.h */,
+				7D7A7E5013C6D2C90008CF06 /* FBImageView.m */,
+				7D7A7E5113C6D2C90008CF06 /* FBLoginDialog.h */,
+				7D7A7E5213C6D2C90008CF06 /* FBLoginDialog.m */,
+				7D7A7E5313C6D2C90008CF06 /* FBRequest.h */,
+				7D7A7E5413C6D2C90008CF06 /* FBRequest.m */,
+				7D7A7E5513C6D2C90008CF06 /* NSString+HTML.h */,
+				7D7A7E5613C6D2C90008CF06 /* NSString+HTML.m */,
+			);
+			path = "Facebook SDK";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D7A7C4913AF22120008CF06 /* MindIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D7A7C7113AF22120008CF06 /* Build configuration list for PBXNativeTarget "MindIt" */;
+			buildPhases = (
+				7D7A7C4613AF22120008CF06 /* Sources */,
+				7D7A7C4713AF22120008CF06 /* Frameworks */,
+				7D7A7C4813AF22120008CF06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindIt;
+			productName = MindIt;
+			productReference = 7D7A7C4A13AF22120008CF06 /* MindIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D7A7C4113AF22100008CF06 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7D7A7C4413AF22100008CF06 /* Build configuration list for PBXProject "MindIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7D7A7C3F13AF22100008CF06;
+			productRefGroup = 7D7A7C4B13AF22120008CF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D7A7C4913AF22120008CF06 /* MindIt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D7A7C4813AF22120008CF06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7A7C5913AF22120008CF06 /* InfoPlist.strings in Resources */,
+				7D7A7C6213AF22120008CF06 /* MainWindow.xib in Resources */,
+				7D7A7E5813C6D2C90008CF06 /* FBDialog.bundle in Resources */,
+				7D7A7F3613CEEA030008CF06 /* ReportViewController.xib in Resources */,
+				7D7A7F3E13D015410008CF06 /* one.png in Resources */,
+				7D7A7F3F13D015410008CF06 /* two.png in Resources */,
+				7D98B7D313D2455B006B39A5 /* InboxViewController.xib in Resources */,
+				7D98B7D413D2455B006B39A5 /* SearchViewController.xib in Resources */,
+				7D98B7D513D2455B006B39A5 /* SettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D7A7C4613AF22120008CF06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D7A7C5C13AF22120008CF06 /* main.m in Sources */,
+				7D7A7C5F13AF22120008CF06 /* MindItAppDelegate.m in Sources */,
+				7D7A7E5713C6D2C90008CF06 /* Facebook.m in Sources */,
+				7D7A7E5913C6D2C90008CF06 /* FBDialog.m in Sources */,
+				7D7A7E5A13C6D2C90008CF06 /* FBImageView.m in Sources */,
+				7D7A7E5B13C6D2C90008CF06 /* FBLoginDialog.m in Sources */,
+				7D7A7E5C13C6D2C90008CF06 /* FBRequest.m in Sources */,
+				7D7A7E5D13C6D2C90008CF06 /* NSString+HTML.m in Sources */,
+				7D7A7E7D13C6D9E00008CF06 /* SBJsonWriter.m in Sources */,
+				7D7A7E7E13C6D9E00008CF06 /* SBJsonParser.m in Sources */,
+				7D7A7E7F13C6D9E00008CF06 /* SBJsonBase.m in Sources */,
+				7D7A7E8013C6D9E00008CF06 /* SBJSON.m in Sources */,
+				7D7A7E8113C6D9E00008CF06 /* NSString+SBJSON.m in Sources */,
+				7D7A7E8213C6D9E00008CF06 /* NSObject+SBJSON.m in Sources */,
+				7D7A7F3513CEEA030008CF06 /* ReportViewController.m in Sources */,
+				7D7A7F4213D026190008CF06 /* Annotation.m in Sources */,
+				7D7A7F4513D027120008CF06 /* RecordsManager.m in Sources */,
+				7DA737F413D183EE00E21268 /* ReportObj.m in Sources */,
+				7D98B7CC13D244CB006B39A5 /* InboxViewController.m in Sources */,
+				7D98B7CD13D244CB006B39A5 /* SearchViewController.m in Sources */,
+				7D98B7CE13D244CB006B39A5 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D7A7C5713AF22120008CF06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7A7C5813AF22120008CF06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7D7A7C6013AF22120008CF06 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D7A7C6113AF22120008CF06 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D7A7C6F13AF22120008CF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Debug;
+		};
+		7D7A7C7013AF22120008CF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Release;
+		};
+		7D7A7C7213AF22120008CF06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindIt/MindIt-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "MindIt/MindIt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MindIt/Twitter+OAuth/SAOAuthTwitterEngine\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7 i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7D7A7C7313AF22120008CF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MindIt/MindIt-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "MindIt/MindIt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MindIt/Twitter+OAuth/SAOAuthTwitterEngine\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 i386";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D7A7C4413AF22100008CF06 /* Build configuration list for PBXProject "MindIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7A7C6F13AF22120008CF06 /* Debug */,
+				7D7A7C7013AF22120008CF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D7A7C7113AF22120008CF06 /* Build configuration list for PBXNativeTarget "MindIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D7A7C7213AF22120008CF06 /* Debug */,
+				7D7A7C7313AF22120008CF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D7A7C4113AF22100008CF06 /* Project object */;
+}
